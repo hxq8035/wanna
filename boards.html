@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热映口碑榜--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+    <div class="header-box"></div>
+    <div class="subnav">
+        <ul class="navbar clear" data-load="boards">
+            <li class="active" data-value="tips"><a href="javascript:;">热映口碑榜</a></li>
+            <li data-value="expected_num"><a href="javascript:;">最受期待榜</a></li>
+            <li data-value="total_box_office"><a href="javascript:;">TOP票房榜</a></li>
+            <li  data-value="score"><a href="javascript:;">TOP30榜</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="board-content clearFix">
+            <div class="board-list">
+                <img src="img/loading-pic.gif" class="bord-loading-pic">
+                <!--第一个和最后一个榜单加载-->
+                <!--<div style="display:none" class="board-item-top clear">-->
+                    <!--<a href="board_rule.html" target="_blank" class="rule">榜单规则&gt;</a>-->
+                    <!--<div class="list-card list-card-2">-->
+                        <!--<dl class="clear">-->
+                            <!--<dt>-->
+                                <!--<a href="#" target="_blank">-->
+                                    <!--<img src="img/movie/md/2.jpg">-->
+                                <!--</a>-->
+                            <!--<div class="ranking-icon ranking-top-icon">-->
+                                <!--<span>2</span>-->
+                            <!--</div>-->
+                            <!--</dt>-->
+                            <!--<dd class="actor-type">主演：</dd>-->
+                            <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                            <!--&lt;!&ndash;<dd class="main-actor ellipsis">Ana Wagener</dd>&ndash;&gt;-->
+                            <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--</dl>-->
+                        <!--<div class="movie-des">-->
+                <!--<span class="score">-->
+                <!--<i class="int">9.</i>-->
+                <!--<i class="fraction">2</i>-->
+                <!--</span>-->
+                            <!--<div class="movie-name ellipsis">-->
+                                <!--<a href="#" target="_blank">看不见的客人</a>-->
+
+                            <!--</div>-->
+                            <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="list-card list-card-1">-->
+                        <!--<dl class="clear">-->
+                            <!--<dt>-->
+                                <!--<a href="#" target="_blank">-->
+                                    <!--<img src="img/movie/md/2.jpg">-->
+                                <!--</a>-->
+                            <!--<div class="ranking-icon ranking-top-icon">-->
+                                <!--<span>1</span>-->
+                            <!--</div>-->
+                            <!--</dt>-->
+                            <!--<dd class="actor-type">主演：</dd>-->
+                            <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                            <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                            <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--</dl>-->
+                        <!--<div class="movie-des">-->
+                <!--<span class="score">-->
+                <!--<i class="int">9.</i>-->
+                <!--<i class="fraction">2</i>-->
+                <!--</span>-->
+                            <!--<div class="movie-name ellipsis">-->
+                                <!--<a href="#" target="_blank">看不见的客人</a>-->
+                            <!--</div>-->
+                            <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="list-card list-card-3">-->
+                        <!--<dl class="clear">-->
+                            <!--<dt>-->
+                                <!--<a href="#" target="_blank">-->
+                                    <!--<img src="img/movie/md/2.jpg">-->
+                                <!--</a>-->
+                            <!--<div class="ranking-icon ranking-top-icon">-->
+                                <!--<span>3</span>-->
+                            <!--</div>-->
+                            <!--</dt>-->
+                            <!--<dd class="actor-type">主演：</dd>-->
+                            <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                            <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                            <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--</dl>-->
+                        <!--<div class="movie-des">-->
+                <!--<span class="score">-->
+                <!--<i class="int">9.</i>-->
+                <!--<i class="fraction">2</i>-->
+                <!--</span>-->
+                            <!--<div class="movie-name ellipsis">-->
+                                <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                            <!--</div>-->
+                            <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;中间三个榜单的加载&ndash;&gt;-->
+                <!--<div class="list-card clear office-top">-->
+                    <!--<a href="board_rule.html" target="_blank" class="rule">榜单规则&gt;</a>-->
+                    <!--<dl>-->
+                        <!--<dt class="clear">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<img src="img/movie/md/6.jpg">-->
+                            <!--</a>-->
+                        <!--<div class="ranking-icon"><img src="img/board/1111.png" alt=""></div>-->
+                        <!--</dt>-->
+                        <!--<dd class="actor-type">主演：</dd>-->
+                        <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                        <!--&lt;!&ndash;<dd class="main-actor ellipsis" >马里奥·卡萨斯</dd>&ndash;&gt;-->
+                    <!--</dl>-->
+                    <!--<div class=" movie-des-right">-->
+                        <!--<div class="right-content">-->
+                            <!--<div class="movie-name-time">-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                                <!--</div>-->
+                                <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-score">-->
+                                <!--<p class="p-size text-red">-->
+                                    <!--上周末票房：-->
+                                    <!--<span class="num">1.82</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                                <!--<p class="p-size-2">-->
+                                    <!--总票房：-->
+                                    <!--<span>8.60</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="list-card clear">-->
+                    <!--<dl>-->
+                        <!--<dt class="clear">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<img src="img/movie/md/6.jpg">-->
+                            <!--</a>-->
+                        <!--<div class="ranking-icon top-2">2</div>-->
+                        <!--</dt>-->
+                        <!--<dd class="actor-type">主演：</dd>-->
+                        <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                        <!--&lt;!&ndash;<dd class="main-actor ellipsis" >马里奥·卡萨斯</dd>&ndash;&gt;-->
+                    <!--</dl>-->
+                    <!--<div class=" movie-des-right">-->
+                        <!--<div class="right-content">-->
+                            <!--<div class="movie-name-time">-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                                <!--</div>-->
+                                <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-score">-->
+                                <!--<p class="p-size text-red">-->
+                                    <!--上周末票房：-->
+                                    <!--<span class="num">1.82</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                                <!--<p class="p-size-2">-->
+                                    <!--总票房：-->
+                                    <!--<span>8.60</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="list-card clear">-->
+                    <!--<dl>-->
+                        <!--<dt class="clear">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<img src="img/movie/md/6.jpg">-->
+                            <!--</a>-->
+                        <!--<div class="ranking-icon top-3">3</div>-->
+                        <!--</dt>-->
+                        <!--<dd class="actor-type">主演：</dd>-->
+                        <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                        <!--&lt;!&ndash;<dd class="main-actor ellipsis" >马里奥·卡萨斯</dd>&ndash;&gt;-->
+                    <!--</dl>-->
+                    <!--<div class=" movie-des-right">-->
+                        <!--<div class="right-content">-->
+                            <!--<div class="movie-name-time">-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                                <!--</div>-->
+                                <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-score">-->
+                                <!--<p class="p-size text-red">-->
+                                    <!--上周末票房：-->
+                                    <!--<span class="num">1.82</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                                <!--<p class="p-size-2">-->
+                                    <!--总票房：-->
+                                    <!--<span>8.60</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;第四名以后开始&ndash;&gt;-->
+                <!--<div class="list-card clear">-->
+                    <!--<dl>-->
+                        <!--<dt class="clear">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<img src="img/movie/md/6.jpg">-->
+                            <!--</a>-->
+                        <!--<div class="ranking-icon">4</div>-->
+                        <!--</dt>-->
+                        <!--<dd class="actor-type">主演：</dd>-->
+                        <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                        <!--&lt;!&ndash;<dd class="main-actor ellipsis" >马里奥·卡萨斯</dd>&ndash;&gt;-->
+                    <!--</dl>-->
+                    <!--<div class=" movie-des-right">-->
+                        <!--<div class="right-content">-->
+                            <!--<div class="movie-name-time">-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                                <!--</div>-->
+                                <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-score">-->
+                <!--<span class="score">-->
+                <!--<i class="int">9.</i>-->
+                <!--<i class="fraction">2</i>-->
+                <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="list-card clear">-->
+                    <!--<dl>-->
+                        <!--<dt class="clear">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<img src="img/movie/md/2.jpg">-->
+                            <!--</a>-->
+                        <!--<div class="ranking-icon">5</div>-->
+                        <!--</dt>-->
+                        <!--<dd class="actor-type">主演：</dd>-->
+                        <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                        <!--&lt;!&ndash;<dd class="main-actor ellipsis" >马里奥·卡萨斯</dd>&ndash;&gt;-->
+                    <!--</dl>-->
+                    <!--<div class=" movie-des-right">-->
+                        <!--<div class="right-content">-->
+                            <!--<div class="movie-name-time">-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                                <!--</div>-->
+                                <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-score expect">-->
+                                <!--<p class="p-size text-yellow">-->
+                                    <!--想看人数：-->
+                                    <!--<span class="num">62923</span>-->
+                                    <!--人-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="list-card clear">-->
+                    <!--<dl>-->
+                        <!--<dt class="clear">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<img src="img/movie/md/kbj.jpg">-->
+                            <!--</a>-->
+                        <!--<div class="ranking-icon">6</div>-->
+                        <!--</dt>-->
+                        <!--<dd class="actor-type">主演：</dd>-->
+                        <!--<dd class="main-actor ellipsis">马里奥·卡萨斯</dd>-->
+                        <!--<dd class="main-actor ellipsis">Ana Wagener</dd>-->
+                        <!--&lt;!&ndash;<dd class="main-actor ellipsis" >马里奥·卡萨斯</dd>&ndash;&gt;-->
+                    <!--</dl>-->
+                    <!--<div class=" movie-des-right">-->
+                        <!--<div class="right-content">-->
+                            <!--<div class="movie-name-time">-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank ">看不见的客人</a>-->
+                                <!--</div>-->
+                                <!--<div class="release-time">上映时间：2017-09-15</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-score expect">-->
+                                <!--<p class="p-size text-red">-->
+                                    <!--总票房：-->
+                                    <!--<span class="num">1.82</span>-->
+                                    <!--亿-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            </div>
+        </div>
+        <div class="pages board-pages" data-load="pageList">
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+
+    <div class="top">
+        <a href="javascript:;" class="top-btn"></a>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/board.js"></script>
+</body>
+</html>

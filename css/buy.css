@@ -1,0 +1,624 @@
+.order-bar{
+    height: 60px;
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+.step{
+    float: left;
+    width: 25%;
+}
+.step-num{
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffd8d7;
+    position: relative;
+    top: 10px;
+}
+.done .step-num{
+    background-color: #f03d37;
+}
+.step .bar{
+    width: 0;
+    height: 4px;
+    border-left: 150px solid #ffd8d7;
+    border-right: 150px solid #ffd8d7;
+}
+.step:first-child  .bar{
+    border-left-color: transparent!important;
+}
+.step:last-child .bar{
+    border-right-color: transparent!important;
+}
+.done .bar{
+    border-color: #f03d37;
+}
+.step-text{
+    font-size: 14px;
+    color: #999;
+    display: inline-block;
+    margin-top: 10px;
+}
+.done .step-text{
+    color: #f03d37;
+}
+
+/*step1*/
+.movie-info{
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.right .movie-info{
+    margin-top: 0;
+}
+.movie-info .movie-name{
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+}
+.score{
+    display: inline-block;
+    font-size: 24px;
+    color: #faaf00;
+}
+.score:after{
+    content: "\5206";
+    font-size: 12px;
+}
+.wish:after{
+    content: "\4EBA\60F3\770B";
+    font-size: 12px;
+}
+.movie-desc>div{
+    display: inline-block;
+    font-size: 14px;
+    color: #151515;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.key{
+    color: #999;
+}
+.show-date{
+    padding: 30px 0;
+    font-size: 14px;
+    color: #999;
+}
+.date-item{
+    display: inline-block;
+    background-color: #f03d37;
+    border-radius: 100px;
+    color: #fff;
+    padding: 2px 10px;
+    margin-left: 12px;
+    cursor: default;
+}
+.choose table{
+    width: 100%;
+    border: none;
+    border-spacing: 0;
+}
+.choose thead{
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    padding: 18px 0;
+}
+.choose th{
+    padding: 16px 0;
+}
+.choose tbody tr{
+    height: 82px;
+}
+.choose td{
+    text-align: center;
+    width: 20%;
+}
+.film{
+    font-size: 16px;
+}
+.begin-time{
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.sell-price{
+    font-size: 18px;
+    color: #f03d37;
+    font-weight: 700;
+}
+.buy-btn{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: #f03d37;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 10px -2px #f03d37;
+    box-shadow: 0 2px 10px -2px #f03d37;
+}
+.even{
+    background-color: #f9f9f9;
+}
+
+
+/*step2*/
+.main{
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    font-size: 0;
+}
+.left{
+    width: 820px;
+    display: inline-block;
+    vertical-align: top;
+}
+.right{
+    width: 340px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: inline-block;
+}
+.seat-example{
+    margin: 30px 0 30px 118px;
+}
+.example{
+    display: inline-block;
+    font-size: 16px;
+    color: #666;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 38px;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+}
+.selectable-example{
+    background-image:url(../img/buy/unselect.png);
+}
+.sold-example{
+    background-image: url(../img/buy/sold.png);
+}
+.selected-example{
+    background-image: url("../img/buy/select.png");
+}
+.search-box{
+    font-size: 0;
+    overflow: hidden;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+.row-id-container{
+    width: 20px;
+    float: left;
+    margin-top: 112px;
+    white-space: normal;
+}
+.row-id{
+    font-size: 16px;
+    color: #999;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    line-height: 29px;
+    text-align: center;
+}
+.seat-container{
+    margin-left: 50px;
+    overflow: auto;
+    position: relative;
+    padding-top: 112px;
+}
+.screen-container{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index:-1;
+}
+.screen{
+    width: 550px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    background: url(../img/buy/bar.png) no-repeat;
+    background-position-x: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.screen-line{
+    width: 0;
+    border-left: 1px dashed #e5e5e5;
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    left: 50%;
+}
+.seat-wrapper{
+    display: inline-block;
+    min-width: 550px;
+}
+.row{
+    white-space: nowrap;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.seat{
+    display: inline-block;
+    font-size: 0;
+    width: 30px;
+    height: 26px;
+    margin: 0 5px;
+    background: url(../img/buy/unselect.png) no-repeat;
+    background-position: 0 1px;
+}
+.seat.sold{
+    background-image: url(../img/buy/sold.png);
+}
+.seat.selected{
+    background-image: url(../img/buy/select.png);
+}
+.movie-info .poster{
+    width: 115px;
+    height: 158px;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 2px 7px 0 hsla(0,0%,53%,.5);
+    box-shadow: 0 2px 7px 0 hsla(0,0%,53%,.5);
+    float: left;
+}
+.poster img{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    margin-left: 140px;
+}
+.content .name{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 14px;
+    padding-top: 30px;
+}
+.info-item{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 4px;
+}
+.value{
+    color: #151515;
+    margin-left: 2px;
+}
+.message{
+    margin-top: 20px;
+}
+.message .info-item{
+    margin-bottom: 9px;
+}
+.timer{
+    color:#f03d37;
+}
+.price{
+    color: #f03d37;
+    font-size: 24px;
+}
+.price:before{
+    content: "\FFE5";
+    font-size: 14px;
+}
+.buyBtn{
+    cursor: pointer;
+    width: 260px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 21px;
+    margin-top: 38px;
+    margin-left: 40px;
+    background-color: #f03d37;
+    -webkit-box-shadow: 0 2px 10px -2px #f03d37;
+    box-shadow: 0 2px 10px -2px #f03d37;
+}
+.total{
+    color:#333;
+}
+.empty{
+    background-image: none;
+}
+.disabled{
+    background-color: #dedede;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+}
+.count-down-wrapper {
+    width: 100%;
+    height: 90px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    background-color: #fff3f3;
+}
+.count-down-wrapper .count-down {
+    padding-left: 55px;
+    min-height: 41px;
+    margin-left: 30px;
+    background: url(../img/buy/timer.png) no-repeat;
+    background-position: 0 17px;
+}
+.count-down-wrapper .time-left {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 4px;
+}
+.count-down-wrapper .tip {
+    font-size: 14px;
+    color: #f03d37;
+}
+.order-table {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-spacing: 0;
+    margin-bottom: 60px;
+}
+.order-table thead {
+    background-color: #f7f7f7;
+}
+.order-table thead th {
+    font-size: 16px;
+    color: #333;
+    width: 25%;
+    padding: 14px 0;
+    font-weight: 400;
+}
+.order-table .movie-name {
+    font-size: 16px;
+}
+.order-table td {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+}
+.order-table .showtime {
+    font-size: 14px;
+    color: #f03d37;
+}
+.right-btn {
+    text-align: right;
+}
+.right-btn .price-wrapper {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 17px;
+}
+.right-btn .price-wrapper .price {
+    font-size: 36px;
+    color: #f03d37;
+}
+.minute,.second{
+    font-size: 32px;
+    color: #f03d37;
+    margin: 0 5px;
+}
+.pay-btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 190px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    background-color: #f03d37;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 2px 10px -2px #f03d37;
+    box-shadow: 0 2px 10px -2px #f03d37;
+}
+.warning {
+    font-size: 12px;
+    color: #666;
+    padding-left: 18px;
+    background: url(../img/buy/warring.png) no-repeat;
+    background-size: 12px;
+    background-position-y: 2px;
+    margin-bottom: 8px;
+}
+
+.payment-container {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 0 20px 50px;
+}
+.how-pay{
+    color: #000;
+    font-size: 16px;
+}
+.payment {
+    margin-top: 30px;
+}
+.payment-list {
+    margin-top: 30px;
+}
+.payment-list li {
+    float: left;
+    width: 214px;
+    cursor: pointer;
+    margin: 0 0 10px;
+}
+.payment-list li input{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    vertical-align: middle;
+}
+
+.payment-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    padding-right: 4px;
+}
+.checked,.payment-icon:hover{
+    border-color: #00c9b3;
+}
+.payment-icon img {
+    width: 145px;
+    height: 32px;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.payment-submit-area {
+    margin-top: 50px;
+}
+.amount {
+    text-align: right;
+    font-size: 14px;
+    color: #f60;
+}
+.attention{
+    color: #f60;
+}
+.amount-price {
+    font-size: 30px;
+    font-family: arial,sans-serif;
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 36px;
+    border: none;
+    background-color: #f90;
+    border-radius: 100px;
+    background-image: linear-gradient(180deg,#ffa114,#f59300);
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+
+}
+ .payment-submit {
+    float: right;
+    margin-top: 14px;
+}
+.success{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.succ-box{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    width: 340px;
+    height: 150px;
+    margin-left: -192px;
+    margin-top: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: 21px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    z-index: 10000;
+}
+.succ-box h3{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background: url("../img/login/tan.png") no-repeat 75px 15px;
+    background-size:9% auto;
+}
+.succ-box p{
+    margin-top: 15px;
+}
+.succ-box a{
+    padding: 5px 10px 4px 10px;
+    border-radius: 4px;
+    background-color: #f03d37;
+    color:#fff;
+}
+.no-selected{
+    margin: 28px 0 39px;
+    text-align: center;
+}
+.no-selected span{
+    color: #f03d37;
+}
+.sep{
+    padding: 20px 0 10px;
+    border-top: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.4);
+    display: none;
+}
+.modal-container .modal {
+    width: 460px;
+    height: 155px;
+    padding: 30px 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    text-align: center;
+}
+.modal-container .tip {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 26px;
+    margin-top: 12px;
+}
+.modal-container .ok-btn {
+    color: #fff;
+    background-color: #f03d37;
+    -webkit-box-shadow: 0 2px 10px -2px #f03d37;
+    box-shadow: 0 2px 10px -2px #f03d37;
+    display: inline-block;
+    border-radius: 100px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    width: 260px;
+    padding: 0;
+    cursor: pointer;
+}
+.modal-container .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/buy/warring.png) no-repeat;
+}

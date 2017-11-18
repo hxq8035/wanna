@@ -1,0 +1,318 @@
+.header-div{
+    border-bottom:2px solid #e02025;
+    min-width: 980px;
+    color: #666;
+}
+.header-div div{
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 980px;
+    position: relative;
+}
+.sign-logo{
+    width: 133px;
+    height: 40px;
+    margin-top: -2px;
+
+}
+.welcome{
+    color: #666;
+    font-size: 24px;
+    position: absolute;
+    left: 200px;
+    top: 28px;
+}
+.logo{
+    width: 160px;
+    height: 65px;
+    display: inline-block;
+    background: url(../img/login/logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.main{
+    width: 100%;
+}
+.container{
+    margin: 0 auto 70px;
+    width: 980px;
+    height: 370px;
+    padding-top: 50px;
+}
+.left-img{
+    float: left;
+    height: 100%;
+    margin: 0 115px 0 0;
+    width: 480px;
+}
+.left-img img{
+    width: 100%;
+    height: 100%;
+}
+.form-box{
+    width: 270px;
+    float: left;
+}
+.validate-info{
+    min-height: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #f5d8a7;
+    border-radius: 2px;
+    background: #fff6db;
+    font-size: 12px;
+    visibility: hidden;
+}
+.vali-icon{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    overflow: hidden;
+    vertical-align: -3px;
+
+}
+.vali-icon-err{
+    background: url("../img/login/vali.png") no-repeat;
+    background-position: 0 -296px;
+}
+.vali-icon-succ{
+    background: url("../img/login/vali.png") no-repeat;
+    background-position: 0 -453px;
+}
+.title{
+    font-weight: 400;
+    font-size: 16px;
+}
+.text-error{
+    color:#f76120 !important;
+    font-weight: bold;
+}
+.register-title{
+    font-size: 20px;
+    color:#ef4238;
+    font-weight: bold;
+    padding-left: 40px;
+}
+.form-input {
+    padding:8px 0;
+}
+.form-input .f-text{
+    width: 230px;
+    height: 24px;
+    padding:5px;
+    padding-left: 33px;
+    line-height: 24px;
+    border: 1px solid #aaa;
+    background-position: 9px center;
+    outline: none;
+    vertical-align: middle;
+}
+.form-input input:focus{
+    border-color: #e02025;
+}
+.uname{
+    background:url(../img/login/user.png) no-repeat;
+}
+.upwd{
+    background:url(../img/login/upwd.png) no-repeat;
+}
+.forget{
+    float: right;
+    color: #ec454a;
+    font-size: 12px;
+}
+.forget:hover,.footer a:hover{
+    text-decoration: underline;
+}
+.checkbox{
+    padding-top: 0;
+}
+.checkbox label{
+    font-size: 12px;
+    vertical-align: top;
+}
+.login-btn{
+    border: #e02025;
+    color: #FFF;
+    background: #ec454a;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ec454a),color-stop(100%,#e02025));
+    background: -webkit-linear-gradient(top,#ec454a 0,#e02025 100%);
+    background: linear-gradient(to bottom,#ec454a 0,#e02025 100%);
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    padding: 8px 20px 7px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    outline:none;
+}
+.sign{
+    color:#666;
+}
+.sign a{
+    color: #ec454a;
+}
+.footer{
+    margin: 0 auto 30px;
+    width: 980px;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+}
+.footer a{
+    color:#666;
+}
+.error{
+    border:2px solid #f76120 !important;
+}
+/*注册*/
+
+.sign-container{
+    height: auto;
+    background: url("../img/login/bg.jpg") no-repeat;
+    background-position: -60px 50px;
+}
+.sign-box{
+    float: right;
+    border-radius: 2px;
+    padding: 1.2em .6em;
+    width: 590px;
+    margin-right: 25px;
+    box-sizing: border-box;
+}
+.sign-container .form-input label{
+    width: 100px;
+    display: inline-block;
+    padding-top: 6px;
+    font-size: 14px;
+    text-align: right;
+    color: #333;
+}
+.sign-container .f-text{
+    padding-left: 5px;
+    width: 248px;
+}
+.red-login{
+    margin-left: 170px;
+    font-size: 12px;
+    color: #666;
+}
+.red-login:hover{
+    text-decoration: underline;
+    color: #ef4238;
+}
+.tips{
+    margin-left: 4px;
+    padding: 6px 0;
+    line-height: 24px;
+    font-size: 12px;
+    display: none;
+}
+.upw-strength{
+    margin-left: 105px;
+    width: 260px;
+    background-color: #e0e0e0;
+    position: relative;
+}
+.bar_tips{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.upwd-strength-tips{
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    width: 85px;
+    border-right: 2px solid #fff;
+    color: #fff;
+}
+.no-border{
+    border-right: 0;
+}
+.strength-bar{
+    background: #d3ebee;
+    height: 20px;
+    width: 0;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+}
+.strength-week{
+    width: 85px;
+    background: #f76120;
+}
+.strength-normal{
+    width: 172px;
+    background: #ff8900;
+}
+.strength-strong{
+    width: 260px;
+    background: #5bab3c;
+}
+.register-btn{
+    width: 260px;
+    margin-left: 105px;
+}
+.success{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.succ-box{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    width: 340px;
+    height: 150px;
+    margin-left: -192px;
+    margin-top: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: 21px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    z-index: 10000;
+}
+.succ-box h3{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background: url("../img/login/tan.png") no-repeat 75px 15px;
+    background-size:9% auto;
+}
+.succ-box p{
+    margin-top: 15px;
+}
+.succ-box a{
+    padding: 5px 10px 4px 10px;
+    border-radius: 4px;
+    background-color: #5bab3c;
+    color:#fff;
+}
+.img-lg-close{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/movie_detail/red-close.png");
+    cursor: pointer;
+}
+
+

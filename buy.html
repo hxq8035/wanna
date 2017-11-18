@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>场次--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+    <div class="header-box"></div>
+    <div class="container">
+        <div class="order-bar">
+            <div class="step done">
+                <span class="step-num">1</span>
+                <div class="bar"></div>
+                <div class="step-text">选择影片场次</div>
+            </div>
+            <div class="step">
+                <span class="step-num">2</span>
+                <div class="bar"></div>
+                <div class="step-text">选择座位</div>
+            </div>
+            <div class="step ">
+                <span class="step-num">3</span>
+                <div class="bar"></div>
+                <div class="step-text">确认订单</div>
+            </div>
+            <div class="step ">
+                <span class="step-num">4</span>
+                <div class="bar"></div>
+                <div class="step-text">支付</div>
+            </div>
+        </div>
+        <div id="step1">
+            <div class="movie-info">
+                <div>
+                    <h3 class="movie-name" data-name="movie"></h3>
+                    <span class="score" data-load="score"></span>
+                </div>
+                <div class="movie-desc">
+                    <!--<div>-->
+                        <!--<span class="key">时长 :</span>-->
+                        <!--<span class="value">114分钟</span>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<span class="key">类型 :</span>-->
+                        <!--<span class="value"> 剧情 </span>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<span class="key">主演 :</span>-->
+                        <!--<span class="value"> 肯尼思·布拉纳</span>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="show-date">
+                <span>观影时间 :</span>
+                <span class="date-item" data-value="viewTimer"></span>
+            </div>
+            <div class="choose">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>影院</th>
+                        <th>放映时间</th>
+                        <th>放映厅</th>
+                        <th>售价（元）</th>
+                        <th>选座购票</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--<tr >-->
+                        <!--<td>-->
+                            <!--<span class="film">OAC影院</span>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<span class="begin-time">12:05</span>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<span class="hall">5号厅(大)</span>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<span class="sell-price">￥23</span>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<a href="javascript:;" class="buy-btn" >选座购票</a>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/buy.js"></script>
+</body>
+</html>

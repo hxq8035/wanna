@@ -1,0 +1,482 @@
+
+/*轮播*/
+.banner{
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 440px;
+    margin-bottom: 88px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .banner-img{
+    position:relative;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 440px;
+}
+.banner-img a{
+    display:block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 440px;
+    transition: all .5s ease;
+    opacity:0;
+    z-index:-1;
+}
+.showImg{
+    opacity:1 !important;
+    z-index:0 !important;
+}
+
+.banner a.ck-slide{
+    display: none;
+    position:absolute;
+    top:168px;
+    width: 48px;
+    height:68px;
+    border-radius:3px;
+    background:#fff;
+    opacity:0.2;
+    transition:all .3s linear;
+}
+
+.banner a.ck-left{
+    left:50px;
+    background: #fff url(../img/index/arrow-left.png) no-repeat center center;
+}
+.banner a.ck-right{
+    right:50px;
+    background:#fff url(../img/index/arrow-right.png) no-repeat center center;
+}
+.banner a.ck-slide:hover,.banner a.ck-slide.hover{
+    opacity:0.4;
+}
+.banner ul.indicators{
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    /*使indicators居中显示，需根据轮播的个数动态改变 17* 轮播数/2）  */
+    margin-left:-34px;
+}
+.banner ul.indicators li{
+    width:10px;
+    height:10px;
+    background:#e5e5e5;
+    opacity: .8;
+    border-radius:50%;
+    float:left;
+    margin-right:10px;
+    transition:all .2s linear;
+}
+.banner ul.indicators li:hover,.banner ul.indicators li.hover{
+    cursor:pointer;
+    background-color:#ec443f;
+    opacity: 1;
+}
+
+/*右边*/
+.container .right{
+    float: right;
+    width: 360px;
+}
+
+.panel-title{
+    overflow: hidden;
+    height: 26px;
+    line-height: 26px;
+    font-size: 26px;
+}
+
+.panel-content{
+    margin-top:23px;
+    height:100%;
+    overflow: hidden;
+}
+.ranking-list{
+    overflow: hidden;
+}
+.ranking-list .ranking-item{
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.ranking-list .ranking-top{
+    margin-bottom: 11px;
+    border: 1px solid #efefef;
+}
+.ranking-top .ranking-top-img{
+    display: block;
+    width: 120px;
+    height: 78px;
+    float: left;
+    position: relative;
+}
+.ranking-top-img i{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 25px;
+    background: url("../img/index/ranking-top.png") no-repeat;
+}
+.ranking-top-img img{
+    width:100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.ranking-top-details{
+    height: 78px;
+    line-height: 78px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.ranking-top-details-main{
+    vertical-align: middle;
+    width: 220px;
+    display: inline-block;
+    line-height:1;
+}
+.ranking-top-name{
+    overflow: hidden;
+    font-size: 18px;
+    color: #333;
+    line-height:1.4;
+    /*webkit-line-clamp限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他外来的WebKit属性。常见结合属性：*/
+    /*display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。*/
+/*-webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+/*text-overflow，可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。*/
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.ranking-top-wish{
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 1;
+}
+.normal-rank{
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    display: inline-block;
+}
+.normal-rank-name{
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    max-width:190px ;
+}
+.ranking-index{
+    display: inline-block;
+    width: 20px;
+    line-height:35px;
+    vertical-align: top;
+    color: #999;
+    font-size: 18px;
+}
+.normal-rank-num{
+    color: #ef4238;
+    float: right;
+    font-size: 14px;
+}
+
+.today-total-incomes{
+    margin-top: 29px;
+    background-color: #fdfdfd;
+    border: 1px solid #efefef;
+    padding-right: 15px;
+}
+.today-total-incomes>h3{
+    float: left;
+    width: 20px;
+    height: 83px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ef4238;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px
+}
+.total-income-body{
+    font-size: 14px;
+    margin-left: 54px;
+    color: #ef4238;
+    padding-top: 20px;
+}
+.total-income-body .total-num{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+.more{
+    margin-top: 13px;
+    float: right;
+    line-height: 16px;
+    color: #ef4238;
+}
+
+.total-income-time{
+    color: #999;
+    margin-top: 6px;
+}
+.total-income-time span:nth-child(2){
+    float: right;
+}
+.most-expect{
+    margin-top: 80px;
+}
+.panel-more{
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+    float: right;
+    color: #ffb400;
+}
+
+.ecpect-ranking .ranking-top{
+    margin-bottom: 0;
+}
+.ecpect-ranking .ranking-top-img{
+    width: 140px;
+    height: 194px;
+}
+.ecpect-ranking .ranking-top-details{
+    height: 194px;
+    line-height: 194px;
+}
+.release-time{
+    color: #999;
+    margin-top: 12px;
+}
+.ecpect-ranking .ranking-top-img i{
+    background: url("../img/index/expect.jpg") no-repeat;
+}
+.ecpect-ranking .normal-rank-num{
+    color: #ffb400;
+}
+.ecpect-ranking .ranking-index-2,.ecpect-ranking .ranking-index-3{
+    border: 1px solid #efefef;
+    position: relative;
+    width: 170px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+.ecpect-ranking .ranking-index-3{
+    float: right;
+}
+.ecpect-ranking .ranking-index-2 .ranking-index,.ecpect-ranking .ranking-index-3 .ranking-index{
+    position: absolute;
+    padding-left: 4px;
+    width: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #ffb400;
+}
+.ecpect-ranking .ranking-index-2 img,.ecpect-ranking .ranking-index-3 img{
+    width: 100%;
+    height: 118px;
+}
+.ecpect-ranking .ranking-index-2 a,.ecpect-ranking .ranking-index-3 a{
+    display: block;
+}
+.ecpect-ranking .ranking-index-2 .normal-rank-num,.ecpect-ranking .ranking-index-3 .normal-rank-num{
+    line-height: 1;
+    margin-top: 6px;
+    margin-left: 10px;
+    float: none;
+    display: inline-block;
+}
+.top-name{
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right:10px;
+    max-width: 150px;
+    line-height: 1.5;
+}
+.ranking-index-4{
+    clear: both;
+}
+.top-100{
+    margin-top:100px ;
+}
+.top-100-list .ranking-top-img i{
+    background: url("../img/index/top.jpg") no-repeat;
+}
+.top-100-list .normal-rank-num{
+    color: #ffb400;
+}
+.ranking-item:hover{
+    background-color: #F7F7F7;
+}
+.panel-more:hover,.more:hover{
+    text-decoration: underline;
+}
+
+/*左边*/
+.left{
+    padding: 0 18px;
+    margin-right: 363px;
+}
+.left .panel{
+    width: 750px;
+}
+.left .panel:not(:first-child){
+    margin-top:62px;
+}
+.left .panel-title{
+    width: 740px;
+}
+.movie-list{
+    margin:-29px 0 20px -25px;
+}
+.movie-list li{
+    margin:30px 0 0 30px;
+    position: relative;
+    float: left;
+}
+.movie-item{
+    border: 1px solid #efefef;
+}
+.movie-item:hover{
+    -moz-box-shadow:0 0 8px #fff,0 5px 13px rgba(0,0,0,.07);
+    -webkit-box-shadow:0 0 8px #fff,0 5px 13px rgba(0,0,0,.07);
+      box-shadow:0 0 8px #fff,0 5px 13px rgba(0,0,0,.07)
+}
+.movie-poster a{
+    width: 160px;
+    height: 220px;
+    display: inline-block;
+    position: relative;
+}
+.movie-poster img{
+    width: 100%;
+    height: 100%;
+}
+.movie-text{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/index/movie-bg.jpg") repeat-x bottom;
+}
+
+.text-bottom{
+    position: absolute;
+    bottom:7px;
+    color:#fff;
+    width: 100%;
+}
+.movie-score{
+    float: right;
+    margin-right: 10px;
+    color:#ffb400;
+}
+.score-int{
+    font-size: 18px;
+}
+.score-fraction{
+    font-size: 14px;
+}
+.text-name{
+    font-size:16px;
+    line-height:22px;
+    margin: 0 10px;
+}
+.text-name-padding{
+    margin-right: 35px;
+}
+
+.buy-btn a{
+    display: block;
+    width: 160px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color:#ef4238;
+    font-size: 14px;
+}
+.buy-btn a:hover{
+    background-color: #ef4238;
+    color:#fff;
+}
+
+
+/*即将上映*/
+.movie-detail{
+    height: 34px;
+    line-height:34px;
+    text-align: center;
+}
+.movie-wish{
+    font-size: 14px;
+    color: #ffb400;
+    background-color: #fbfbfb;
+    text-align: left;
+    padding-left: 10px;
+}
+.movie-grid{
+    height: 39px;
+    line-height:39px;
+}
+.movie-grid a{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    color: #999;
+    font-size: 14px;
+}
+.preView{
+    border-right: 1px dotted #e5e5e5;
+}
+.movie-grid a.preSale{
+    color: #999;
+    margin-left: -4px;
+}
+.movie-grid a.active{
+    color:#2d98f3
+}
+.movie-grid a.active:hover{
+    color:#fff;
+    background-color: #2d98f3;
+}
+.show-time{
+    color:#999;
+    font-size: 14px;
+    line-height: 40px;
+}
+/*热播电影*/
+.sub-title{
+    margin-left:10px;
+}
+.sub-title a {
+    font-size: 14px;
+}
+.sub-title a:hover{
+    background-color: lightskyblue;
+    color:#fff;
+    border-radius: 5px;
+}
+.movie-poster-long a{
+    width: 350px;
+    height: 220px;
+}
+.movie-poster-long img{
+    width: 100%;
+    height: 100%;
+}
+
+
+

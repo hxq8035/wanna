@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选座--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+<div class="header">
+    <img src="img/loading.gif" class="loading-img">
+</div>
+<div class="header-box"></div>
+<div class="container">
+    <div class="order-bar">
+        <div class="step done">
+            <span class="step-num">1</span>
+            <div class="bar"></div>
+            <div class="step-text">选择影片场次</div>
+        </div>
+        <div class="step done">
+            <span class="step-num">2</span>
+            <div class="bar"></div>
+            <div class="step-text">选择座位</div>
+        </div>
+        <div class="step done">
+            <span class="step-num">3</span>
+            <div class="bar"></div>
+            <div class="step-text">确认订单</div>
+        </div>
+        <div class="step ">
+            <span class="step-num">4</span>
+            <div class="bar"></div>
+            <div class="step-text">支付</div>
+        </div>
+    </div>
+    <div class="count-down-wrapper">
+        <div class="count-down">
+            <p class="time-left">
+                请在
+                <span class="minute">14</span>
+                分钟
+                <span class="second">59</span>秒内完成支付
+            </p>
+            <p class="tip">超时订单会自动取消!</p>
+        </div>
+    </div>
+    <div id="step3" >
+        <p class="warning">请仔细核对场次信息，出票后将<span class="attention">无法退票和改签</span></p>
+        <table class="order-table">
+            <thead>
+            <tr>
+                <th>影片</th>
+                <th>时间</th>
+                <th>影院</th>
+                <th>座位</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--<tr>-->
+                <!--<td class="movie-name">《雷神3：诸神黄昏》</td>-->
+                <!--<td class="showtime">今天 11月5日 20:40</td>-->
+                <!--<td>OAC影城</td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            </tbody>
+        </table>
+        <div class="right-btn">
+            <div class="price-wrapper">
+                <span>实际支付 :</span>
+                <span class="price"></span>
+            </div>
+            <div><div class="pay-btn" data-act="pay-click">确认支付</div></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img src="img/loading.gif" class="loading-img">
+</div>
+
+<div class="modal-container">
+    <div class="modal">
+        <span class="icon"></span>
+        <p class="tip">支付超时，请重新购买</p>
+        <div class="ok-btn">我知道了</div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/base.js"></script>
+<script src="js/common.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/order_confirm.js"></script>
+</body>
+</html>

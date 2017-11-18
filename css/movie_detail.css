@@ -1,0 +1,911 @@
+/*头部banner*/
+.ban-container{
+    width: 100%;
+    height: 376px;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    position: absolute;
+    background: #392f59 url("../img/movie_detail/films_bg.png") no-repeat 50%;
+}
+.ban2{
+    /*background: #3F2B1F;*/
+    height: 0;
+    overflow: hidden;
+    transition: height .5s ease;
+    z-index: 10;
+}
+.banner-main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 376px;
+    position: relative;
+}
+.banner-detail{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-detail .bann-left{
+    width: 300px;
+    float: left;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+}
+.left-shadow{
+    position: relative;
+    margin: 0 30px;
+    width: 240px;
+    height: 330px;
+    padding-bottom: 40px;
+    background: url("../img/movie_detail/shadow.png") no-repeat bottom;
+}
+.left-shadow .avator{
+    border: 4px solid #fff;
+    height: 322px;
+    width: 232px;
+}
+.bann-right{
+    position: relative;
+    margin-right: 30px;
+    margin-left: 300px;
+    margin-top: 70px;
+}
+.right-title{
+    position: relative;
+    color: #fff;
+}
+.name{
+    width: 900px;
+    margin-top: 0;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 64px;
+}
+.ename{
+    width: 340px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+.right-title ul{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.right-title ul li{
+    margin:12px 0;
+}
+.action-btn{
+    position: absolute;
+    bottom: 20px;
+}
+.my-btn a{
+    cursor: pointer;
+    float: left;
+    display: block;
+    width: 120px;
+    height: 25px;
+    background-color: #756189;
+    margin-right: 10px;
+    padding-top: 11px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 2px;
+}
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 2px;
+    width: 16px;
+    height: 16px;
+
+}
+.wish-icon{
+    background: url("../img/movie_detail/heart.png");
+}
+.view-icon{
+    background: url("../img/movie_detail/red-heart.png");
+}
+.score-icon{
+    background: url("../img/movie_detail/star.png");
+}
+.score-on{
+    background: url("../img/movie_detail/starOn.png");
+}
+.buy-btn{
+    display: inline-block;
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0;
+    color:#fff;
+    background-color: #df2d2d;
+}
+.movie-total{
+    position: absolute;
+    bottom: 10px;
+    left: 342px;
+}
+.movie-index{
+    color:#fff;
+    margin-bottom:16px;
+}
+.movie-index-title{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.movie-index-content{
+    overflow: hidden;
+}
+.index-left{
+    float: left;
+    font-size: 30px;
+    color: #ffc600;
+    height: 30px;
+    line-height: 30px;
+}
+.index-right{
+    margin-left: 54px;
+    font-size: 12px;
+}
+.star-wrapper{
+    width: 60px;
+    height: 12px;
+    position: relative;
+    background: url("../img/movie_detail/score.png") repeat-x;
+    margin-bottom: 4px
+}
+.star-on{
+    height: 12px;
+    background: url("../img/movie_detail/scoreOn.png") repeat-x;
+}
+.no-info {
+    display: inline-block;
+    font-size: 24px;
+    /*H色调0表示红色 S饱和度 L亮度 A透明度*/
+    color: hsla(0, 0%, 100%, .4);
+}
+.plnum{
+    font-size: 30px;
+}
+.unit{
+    font-size: 12px;
+    padding-left:4px;
+}
+.change{
+    position: absolute;
+    right:20px;
+    top:0;
+    width: 56px;
+    height: 185px;
+}
+.change a{
+    position: absolute;
+    top: -5px;
+    z-index: 5;
+    display: block;
+    width: 56px;
+    height: 185px;
+    transition: top .9s ease;
+    overflow: hidden;
+    background: url(../img/movie_detail/down.png) no-repeat 0 0;
+}
+.change a:hover{
+    top:0;
+}
+.banner-more{
+    height: 100%;
+    width: 100%;
+}
+.more-content{
+    position: relative;
+    top:90px;
+}
+.scroll-btn{
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 68px;
+    top: 70px;
+    left: 5px;
+    background: url(../img/movie_detail/arrow.png) no-repeat;
+    color: #333;
+}
+.scroll-btn.disabled{
+    cursor: not-allowed;
+}
+.scroll-btn-right{
+    left: auto;
+    right: 5px;
+    background-position: right top;
+}
+
+/*下拉更多影片*/
+.movie-more{
+    height: 220px;
+    width: 990px;
+    overflow: hidden;
+    margin:0 auto;
+    position: relative;
+}
+.movie-more ul{
+    width: auto;
+    white-space: nowrap;
+    /*overflow-x: scroll;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s linear;
+    font-size: 0;
+
+}
+.movie-more ul li{
+    margin-right: 45px;
+    display: inline-block;
+    width: 160px;
+}
+.movie-more ul li:hover{
+    opacity: .75;
+}
+/*.movie-more ul li:hover{*/
+    /*box-shadow: 10px 10px 5px #e8e8e8;*/
+    /*transform: translateY(-2px);*/
+/*}*/
+.movie-more a{
+    width: 160px;
+    height: 220px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+.movie-text{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/index/movie-bg.jpg") repeat-x bottom;
+}
+
+.text-bottom{
+    position: absolute;
+    bottom:7px;
+    color:#fff;
+    width: 100%;
+}
+.movie-score{
+    float: right;
+    margin-right: 10px;
+    color:#ffb400;
+}
+.score-int{
+    font-size: 18px;
+}
+.score-fraction{
+    font-size: 14px;
+}
+.text-name{
+    font-size:16px;
+    line-height:22px;
+    margin: 0 10px;
+}
+.text-name-padding{
+    margin-right: 35px;
+}
+.close{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.close a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/movie_detail/close.png) no-repeat;
+    opacity: .5;
+}
+
+/*影片相关信息*/
+.container-body{
+    margin-top: 80px;
+}
+.main-content{
+    float: left;
+    width: 730px;
+}
+.main-content-title{
+    border-bottom: 2px solid #eee;
+}
+.main-title{
+    cursor: pointer;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: -2px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 100%;
+    border-bottom: 2px solid transparent;
+}
+.main-title.active{
+    color: #ef4238;
+    border-bottom-color: #ef4238;
+}
+.title-disable{
+    color: #999;
+    cursor: not-allowed;
+}
+
+/*介绍*/
+.actor-box,.desc-box{
+    margin-top: 40px;
+}
+.desc-detail{
+    margin-bottom: 60px;
+    position: relative;
+}
+.desc-detail-title h3{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
+.desc-detail-title h3:before{
+    float: left;
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    margin-right: 6px;
+    background-color: #ef4238;
+}
+.desc-detail-content{
+    margin-top: 20px;
+}
+.detail-p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.more{
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999;
+    padding-right: 14px;
+    background: url("../img/movie_detail/more.png") no-repeat 100%;
+}
+.more:hover{
+    text-decoration: underline;
+}
+.movie-more ul li.loading{
+    width: 990px;
+    margin-right: 0;
+    display: block;
+    text-align: center;
+
+}
+.star-wraper{
+    font-size: 16px;
+}
+.desc-detail .star-group{
+    float: left;
+    margin-left: 30px;
+}
+.desc-detail .star-group:first-child{
+    margin-left: 0;
+}
+.star-type{
+    margin-bottom: 16px;
+}
+.star-list{
+    margin-left: -20px;
+}
+.star-list li{
+    float: left;
+    width: 128px;
+    margin-left: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.star-link{
+    margin-bottom: 6px;
+    width: 128px;
+    height: 170px;
+    overflow: hidden;
+    display: inline-block;
+}
+.star-link img{
+    width: 128px;
+    height: 170px;
+}
+.star-name,.role{
+    display: inline-block;
+    width: 128px;
+    text-align: center;
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+    font-size: 16px;
+}
+.role{
+    font-size: 14px;
+    color: #666;
+}
+.img-wrapper{
+    float: left;
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+}
+.img-wrapper img{
+    cursor: pointer;
+    width: 126px;
+    height: 126px;
+}
+.img-wrapper-lg,.img-wrapper-lg img{
+    width: 465px;
+    height: 258px;
+}
+.img2,.img3{
+    margin-left: 6px;
+}
+.img4,.img5{
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.score-star{
+    display: inline-block;
+}
+.score-star li{
+    float: left;
+    height: 16px;
+}
+.half-star{
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+}
+.comment .half-star{
+    width: 15px;
+    height: 30px;
+}
+.left{
+    padding-left:2px;
+    background: url("../img/movie_detail/star-left-gray.png")  no-repeat;
+}
+.comment .left{
+    background: url("../img/movie_detail/star-left-gray-lg.png") no-repeat;
+}
+.left.active{
+    background:url("../img/movie_detail/star-left-yellow.png")  no-repeat;
+}
+.comment .left.active{
+    background:url("../img/movie_detail/star-left-yellow-lg.png")  no-repeat;
+}
+.right{
+    margin-left: -7px;
+    padding-right:2px;
+    background: url("../img/movie_detail/star-right-gray.png") no-repeat;
+}
+.comment .right{
+    background: url("../img/movie_detail/star-right-gray-lg.png") no-repeat;
+}
+.right.active{
+    background:url("../img/movie_detail/star-right-yellow.png")  no-repeat;
+}
+.comment .right.active{
+    background:url("../img/movie_detail/star-right-yellow-lg.png")  no-repeat;
+}
+
+.comment-content{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    line-height: 26px;
+    font-size: 14px;
+}
+.last .comment-content{
+    border-bottom: none;
+}
+
+
+/*演职人员*/
+.actor-num{
+    line-height: 16px;
+    font-size: 14px;
+    color: #999;
+}
+.actor-box .star-group{
+    margin-bottom: 30px;
+}
+.actor-box li{
+    margin-bottom: 20px;
+}
+.default-img{
+    background-position: 50%;
+    background-size: 128px 66px;
+    background-repeat: no-repeat;
+    background-image: url("../img/loading.png");
+}
+
+/*图集*/
+.img-box ul{
+    margin-left: -20px;
+}
+.img-box li{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.img-box img{
+    cursor: pointer;
+    width: 104px;
+    height: 104px;
+}
+
+
+/*奖项*/
+.award-item{
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.award-item:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.left-img{
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+}
+.left-img img{
+    width: 50px;
+    height: 50px;
+}
+.content{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+
+/*相关资讯*/
+.related{
+    width: 360px;
+    margin-left: 840px;
+}
+.news-item{
+    overflow: hidden;
+    margin: 0 0 16px;
+}
+.news-img{
+    background-color: #efefef;
+    position: relative;
+    width: 140px;
+    height: 86px;
+    overflow: hidden;
+    float: left;
+}
+.news-img img{
+    position: absolute;
+}
+.img-detail{
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.news-detail{
+    overflow: hidden;
+    position: relative;
+    margin-left: 150px;
+    height: 86px;
+}
+.news-detail-title{
+    line-height: 1.2;
+    font-size: 16px;
+    margin-top: 4px;
+    height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.news-info{
+    color: #999;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    white-space: nowrap;
+}
+.news-source{
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 7em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-icon{
+    margin: 0 2px 0 5px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.news-icon-view{
+    width: 18px;
+    height: 14px;
+    background: url("../img/news/view.png") no-repeat top;
+    background-size:18px 14px;
+}
+.news-icon-comments{
+    width: 16px;
+    height: 14px;
+    background: url("../img/movie_detail/comment.png") no-repeat top;
+    background-size:16px 14px;
+}
+
+
+/*相关电影*/
+.related-movie{
+    margin: -19px 0 20px -18px;
+    font-size: medium;
+}
+.movie-item{
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.movie-poster{
+    border: 1px solid #efefef;
+    position: relative;
+    margin:-1px;
+    width: 106px;
+}
+.movie-poster img{
+    width: 106px;
+    height: 145px;
+}
+.score{
+    color: #ffb400;
+}
+.movie-name,.related-movie .score{
+    width: 106px;
+    margin-top: 10px;
+    text-align: center;
+}
+.related-movie .score-int{
+    font-size: 16px;
+}
+.related-movie .score-fraction{
+    font-size: 12px;
+}
+
+/*短评*/
+.score-msg-container{
+    height: 90px;
+    text-align: center;
+    color:#ffc600;
+    font-size: 16px;
+    margin-top: 28px;
+}
+.no-score{
+    padding-top: 50px;
+    margin-bottom: 15px;
+
+}
+.score{
+    margin-bottom: 10px;
+}
+.score .score-num{
+    font-size: 36px;
+}
+.score-msg{
+    margin-bottom: 15px;
+}
+.star-score{
+    margin-bottom: 40px;
+}
+.star-score ul{
+    height: 30px;
+    width: 170px;
+    margin: auto;
+}
+.star-score ul li{
+    float: left;
+    height: 30px;
+}
+
+
+
+.img-lg-overlay{
+    background-color: #0f0f0f;
+    opacity: .95;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1040;
+    display: none;
+}
+.img-lg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+}
+.img-lg-top{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 63px;
+    z-index:1080;
+}
+.img-lg-top,.lg-btn{
+    transition: transform .35s linear 0s,opacity .35s linear 0s,color .2s linear,
+    -webkit-transform .35s linear 0s;
+}
+.img-lg-top-hide{
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.img-lg-close{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/movie_detail/red-close.png");
+    cursor: pointer;
+}
+.img-lg-count{
+    font-size: 16px;
+    color:#999;
+    text-align: center;
+    line-height: 63px;
+    width: 100%;
+    height: 100%;
+}
+.img-lg-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.img-lg-content ul,.list-bottom ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    white-space: nowrap;
+    transition: all,.6s linear;
+}
+.img-lg-content ul li{
+    display: inline-block;
+    /*width: 1263px;*/
+    height: 100%;
+    padding:0 5px ;
+    padding-top: 60px;
+    padding-bottom: 148px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+
+}
+.img-lg-content ul li img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.lg-btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+    margin-top: -40px;
+    padding: 8px 10px 9px;
+    position: absolute;
+    top: 50%;
+    z-index: 1080;
+    box-sizing: border-box;
+
+}
+.lg-btn-left{
+    left:40px;
+    background: url("../img/movie_detail/lg-left2.png");
+}
+.lg-btn-left:hover{
+    background: url("../img/movie_detail/lg-left.png");
+}
+.lg-btn-left-hide{
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+.lg-btn-right{
+    right: 40px;
+    background: url("../img/movie_detail/lg-right2.png");
+}
+.lg-btn-right:hover{
+    background: url("../img/movie_detail/lg-right.png");
+}
+.lg-btn-right-hide{
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+}
+.list-bottom{
+    position: absolute;
+    height: 88px;
+    left: 72px;
+    right: 72px;
+    bottom:-88px;
+    width: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 1080;
+    transition: all .35s linear;
+}
+.list-bottom-show{
+    bottom:0;
+}
+.list-bottom ul{
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    font-size: 0;
+}
+.list-bottom ul li{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 80px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color .25s ease;
+    margin-right: 0;
+}
+.list-bottom ul li.active,.list-bottom ul li:hover{
+    border-color: #a90707;
+}
+.list-bottom ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+

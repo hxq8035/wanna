@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/query.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+    <div class="header-box"></div>
+
+    <div class="search-input">
+        <div class="black">
+            <input type="text" class="lg-search" placeholder="搜索" maxlength="32" id="searchInput">
+            <ul class="searchList" style="width:570px;" id="searchList">
+                <!--<li>-->
+                    <!--<a href="#" title="">-->
+                        <!--<img src="img/movie/md/agzz.jpg">-->
+                        <!--<span>速度超级上档次</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            </ul>
+            <button class="submit" id="searchBtn"></button>
+        </div>
+        <div class="tips">搜索结果</div>
+    </div>
+    <div class="container">
+        <div class="search-box">
+            <!--<ul class="result-list">-->
+                <!--<li>-->
+                    <!--<a class="movie-img">-->
+                        <!--<img src="img/movie/md/dndh.jpg" alt="">-->
+                        <!--<div class="movie-icon">-->
+                            <!--<i class="max3d"></i>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                    <!--<div class="movie-info">-->
+                        <!--<div class="movie-name">-->
+                            <!--<a href="#" target="_blank">事件去哪了</a>-->
+                        <!--</div>-->
+                        <!--<div class="ename">english</div>-->
+                        <!--<div class="score">5.5</div>-->
+                        <!--<div class="movie-type">阿斯顿撒多</div>-->
+                        <!--<div class="timer">20930-32-32-2</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<div class="pages" style="margin-top: 80px">-->
+                <!--<ul class="page-list" data-load="pageList">-->
+                    <!--<li  class="disabled"><a href="#">上一页</a></li>-->
+                    <!--<li class="active"><a href="#">1</a></li>-->
+                    <!--<li class="seq">...</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <div class="empty">
+                <h3>抱歉没有找到相关影视剧</h3>
+                <dl>
+                    <dt>小喵建议您：</dt>
+                    <dd>1. 请检查输入的关键词是否有误</dd>
+                    <dd>2. 请缩短关键词</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+
+    <div class="top">
+        <a href="javascript:;" class="top-btn"></a>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/query.js"></script>
+</body>
+</html>

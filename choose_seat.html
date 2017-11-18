@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选座--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+<div class="header">
+    <img src="img/loading.gif" class="loading-img">
+</div>
+<div class="header-box"></div>
+<div class="container">
+    <div class="order-bar">
+        <div class="step done">
+            <span class="step-num">1</span>
+            <div class="bar"></div>
+            <div class="step-text">选择影片场次</div>
+        </div>
+        <div class="step done">
+            <span class="step-num">2</span>
+            <div class="bar"></div>
+            <div class="step-text">选择座位</div>
+        </div>
+        <div class="step ">
+            <span class="step-num">3</span>
+            <div class="bar"></div>
+            <div class="step-text">确认订单</div>
+        </div>
+        <div class="step ">
+            <span class="step-num">4</span>
+            <div class="bar"></div>
+            <div class="step-text">支付</div>
+        </div>
+    </div>
+    <div class="main" id="step2">
+        <div class="left">
+            <div class="seat-example">
+                <div class="selectable-example example">
+                    <span>可选座位</span>
+                </div>
+                <div class="sold-example example">
+                    <span>已售座位</span>
+                </div>
+                <div class="selected-example example">
+                    <span>已选座位</span>
+                </div>
+            </div>
+            <div class="seat-box">
+                <div class="row-id-container">
+                    <span class="row-id">1</span>
+                    <span class="row-id">2</span>
+                    <span class="row-id">3</span>
+                    <span class="row-id">4</span>
+                    <span class="row-id">5</span>
+                    <span class="row-id">6</span>
+                </div>
+                <div class="seat-container">
+                    <div class="screen-container">
+                        <div class="screen">银幕中央</div>
+                        <div class="screen-line"></div>
+                    </div>
+                    <div class="seat-wrapper">
+                        <!--<div class="row">-->
+                            <!--<span class="seat" data-column-id="10" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="9" data-row-id="1"></span>-->
+                            <!--<span class="seat sold" data-column-id="8" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="7" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="6" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="5" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="4" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="3" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="2" data-row-id="1"></span>-->
+                            <!--<span class="seat" data-column-id="1" data-row-id="1"></span>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="movie-info clear" data-load="movieInfo">
+                <!--<div class="poster">-->
+                <!--<img src="img/movie/md/dndh.jpg">-->
+                <!--</div>-->
+                <!--<div class="content">-->
+                <!--<p class="name ellipsis">全球风暴</p>-->
+                <!--<div class="info-item">-->
+                <!--<span>类型 :</span>-->
+                <!--<span class="value">动作,惊悚,灾难</span>-->
+                <!--</div>-->
+                <!--<div class="info-item">-->
+                <!--<span>时长 :</span>-->
+                <!--<span class="value">109分钟</span>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div class="message">
+                <div class="info-item">
+                    <span>影院：</span>
+                    <span class="value" data-load="film"></span>
+                </div>
+                <div class="info-item">
+                    <span>影厅：</span>
+                    <span class="value" data-load="hall"></span>
+                </div>
+                <div class="info-item">
+                    <span>场次：</span>
+                    <span class="value timer" data-load="time"></span>
+                </div>
+                <div class="info-item">
+                    <span>票价：</span>
+                    <span class="value" data-load="sell-price"></span>
+                </div>
+                <div class="sep">
+                    <div class="info-item">
+                        <span>座位：</span>
+                        <span class="value timer" data-load="tips">一次最多选四个座位</span>
+                        <p class="no-selected">请<span>点击左侧</span>座位图选座</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="total">总价：</span>
+                        <span class="price" data-value="total">0</span>
+                    </div>
+                </div>
+                <div class="buyBtn disabled" data-act="confirm">确认选座</div>
+            </div>
+        </div>
+    </div >
+</div>
+<div class="footer">
+    <img src="img/loading.gif" class="loading-img">
+</div>
+
+<div class="modal-container">
+    <div class="modal">
+        <span class="icon"></span>
+        <p class="tip">一次最多购买4张票</p>
+        <div class="ok-btn">我知道了</div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/base.js"></script>
+<script src="js/common.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/choose_seat.js"></script>
+</body>
+</html>

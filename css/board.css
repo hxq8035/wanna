@@ -1,0 +1,241 @@
+.main{
+    width: 100%;
+    background: url(../img/board/mainBg.jpg) center -47px no-repeat #f2fbff;
+    padding-top: 420px;
+}
+.board-content{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #d1edfa;
+    padding-bottom: 5px;
+    margin-top: 352px;
+}
+.rule{
+    position: absolute;
+    right: 0px;
+    top: -35px;
+    color: #2aa4da;
+    font-size: 16px;
+}
+.rule:hover{
+    color: #ef4238;
+}
+.board-item-top{
+    position: relative;
+}
+.board-list{
+    width: 100%;
+    margin-top: -384px;
+}
+.office-top{
+    margin-top: -450px;
+    position: relative;
+}
+
+.bord-loading-pic{
+    margin-left: 420px;
+}
+
+.list-card{
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(52,145,188,.28);
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding: 16px;
+}
+.board-item-top .list-card{
+    width: 326px;
+    float: left;
+    margin-right: 10px;
+    padding: 0;
+}
+.board-item-top .list-card-3{
+    margin: 0;
+}
+.list-card dl{
+    float: left;
+    width: 330px;
+    padding-left: 88px;
+    padding-top: 26px;
+}
+
+.board-item-top dl{
+    padding: 30px 0 16px;
+    border-bottom: 1px solid #e8eef2;
+    margin: 0 15px 14px;
+    float: none;
+    width: auto;
+}
+.list-card dt{
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-top: -30px;
+}
+.list-card-2 dt,.list-card-3 dt{
+    margin-top: -60px;
+}
+.list-card-1 dt{
+    margin-top: -93px;
+}
+.board-item-top dt{
+    border: 2px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 6px 1px rgba(70,161,220,.26);
+    margin-right: 15px;
+}
+.list-card img{
+    width: 120px;
+    height: 178px;
+}
+.list-card-2 img,.list-card-3 img{
+    width: 136px;
+    height: 187px;
+    border-radius: 2px;
+}
+.list-card-1 img{
+    width: 160px;
+    height: 220px;
+    border-radius: 2px;
+}
+.ranking-icon{
+    position: absolute;
+    font-size: 38px;
+    width: 68px;
+    left: -90px;
+    top: 69px;
+    text-align: center;
+
+}
+.top-2,.top-3{
+    background-color: #ffb400;
+    color:#fff;
+    width: 50px;
+    height: 50px;
+    left: -80px;
+}
+.office-top .ranking-icon img{
+    width: 50px;
+    height: 50px;
+}
+.ranking-top-icon{
+    width: 50px;
+    height: 40px;
+    left: 0;
+    top: 0;
+}
+.ranking-top-icon:before{
+    bottom: 0;
+    left: 6px;
+    top: 6px;
+    right: 0;
+    border: 1px solid #eb2d59;
+    background: rgba(235,45,89,.4);
+    display: block;
+    content: "";
+    position: absolute;
+}
+.ranking-top-icon span{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    bottom: 6px;
+    left: 0;
+
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background-color: #eb2d59;;
+    font-size: 22px;
+}
+.actor-type{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ef4238;
+}
+ .main-actor{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #2e3b52;
+     margin-top: 10px;
+}
+.list-card .movie-name{
+    margin-bottom: 8px;
+    font-size: 26px;
+    line-height: 40px;
+    height: 40px;
+}
+.board-item-top .movie-des{
+    margin: 0 15px 10px;
+}
+
+.release-time{
+    color: #999;
+}
+.movie-name a:hover{
+    /*color: #ef4238;*/
+    color: #2d98f3;
+}
+.score{
+    float: right;
+    padding-right: 4px;
+    color: #ffb400;
+}
+.int{
+    font-size: 56px;
+}
+.fraction{
+    font-size: 26px;
+    margin-left: -4px;
+}
+.movie-des-right{
+    display: inline-block;
+    height: 174px;
+    width: 525px;
+    margin-left: 20px;
+    padding-right: 5px;
+    line-height: 174px;
+}
+.right-content{
+    display: inline-block;
+    line-height: 1;
+    width: 525px;
+    vertical-align: middle;
+}
+.movie-name-time{
+    display: inline-block;
+    width: 275px;
+}
+.movie-score{
+    display: inline-block;
+    width: 230px;
+    padding-right: 10px;
+    text-align: right;
+    float: right;
+}
+.expect{
+    padding-top: 15px;
+}
+.p-size{
+    font-size: 16px;
+}
+.num{
+    font-size: 26px;
+    font-weight: 700;
+}
+.p-size-2{
+    font-size: 16px;
+    color:#999;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+

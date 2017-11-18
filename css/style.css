@@ -1,0 +1,92 @@
+
+/*子导航条*/
+.subnav{
+    background-color: #47464a;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    float: left;
+}
+.navbar li a{
+    display: block;
+    font-size: 16px;
+    color: #999;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+}
+.navbar li.active a{
+    color: #ef4238;
+    position: relative;
+    cursor: default;
+}
+.navbar li:hover a{
+    color: #fff;
+}
+.navbar li.active:hover a{
+    color: #ef4238;
+}
+.navbar li.active a:before{
+    content: "";
+    width: 2px;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 53px;
+    border-bottom: 7px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: none;
+}
+
+.pages{
+    text-align: center;
+}
+.board-pages{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.page-list li{
+    display: inline-block;
+    height: 30px;
+    margin: 0 4px;
+    border: 1px solid #d8d8d8;
+    line-height: 30px;
+    text-align: center;
+    /*color: #999;*/
+    background-color: #fff;
+}
+.page-list li.seq{
+    padding: 0 12px;
+}
+.page-list li.seq:hover,.page-list li.disabled:hover{
+    border-color: #d8d8d8;
+}
+.page-list li:hover{
+    border-color: #ef4238;
+}
+.page-list li.active{
+    border-color: #ef4238;
+    background-color: #ef4238;
+}
+.page-list li.active a{
+    color: #fff;
+}
+.page-list li.disabled a{
+    color:#999;
+    cursor: not-allowed;
+}
+.page-list li a{
+    display: block;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+

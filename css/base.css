@@ -1,0 +1,420 @@
+/*header*/
+.header-main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    font-size: 18px;
+}
+.header-main .logo{
+    float: left;
+    width: 133px;
+    height: 40px;
+    background: url(../img/header/logo.png) no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sel-city{
+    float: left;
+    margin: 0 10px;
+    position: relative;
+    height:100%;
+}
+.sel-city .city-selected{
+    padding:0 8px;
+    height:100%;
+    cursor: pointer;
+    border:1px solid transparent;
+    border-width: 0 1px;
+    z-index: 200;
+    position: relative;
+}
+.sel-city:hover .city-selected,.login:hover .user-avator,.download:hover a{
+    border-color:#d8d8d8 ;
+    border-bottom: 1px solid #fff;
+
+}
+.city-name{
+    margin-top: 32px;
+    display: inline-block;
+    font-size: 16px;
+}
+.caret{
+    width:0;
+    height: 0;
+    margin-left: 2px;
+    display: inline-block;
+    vertical-align:middle;
+    border-top: 5px dashed #666;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: all .2s ease;
+}
+.sel-city:hover .caret,.login:hover .caret,.download:hover .caret{
+    transform: rotate(180deg);
+}
+.city-list{
+    display: none;
+    position: absolute;
+    top:80px;
+    left: 0;
+    width: 474px;
+    /*height: 259px;*/
+    font-size: 14px;
+    z-index: 100;
+}
+.city-list .city-box{
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    position: relative;
+}
+.city-list .city-shadow{
+    position: absolute;
+    left: 4px;
+    opacity: .2;
+    top:4px;
+    width:100%;
+    height: 293px;
+    z-index: -1;
+    background-color: #000;
+}
+.city-list .city-title{
+    border-bottom: 1px solid #e5e5e5 ;
+    padding: 0 20px;
+    line-height: 39px;
+}
+.city-list .city-title a{
+    color: #333;
+}
+.city-search label{
+    line-height: 24px;
+}
+.city-search input{
+    border: 1px #e5e5e5 solid;
+    padding: 3px;
+    margin: 0 5px;
+}
+.city-search-btn{
+    background-color: #ef4238;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 3px;
+}
+.city-search-btn:hover{
+    text-decoration: underline;
+}
+
+.city-list .city-details{
+    overflow-y: auto;
+    height: 200px;
+}
+.city-search{
+    border-top: 1px solid #e5e5e5;
+    height: 35px;
+    padding: 15px 0 0 20px;
+}
+/*定义滚动条样式*/
+.city-details::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+/*定义滑块样式*/
+.city-details::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: #a1a1a1;
+    border-right: 1px solid #fff;
+}
+.city-details li{
+    padding: 5px 0 5px 40px;
+}
+.city-details li label{
+    float: left;
+    margin: 5px 0 0 -20px;
+    width: 20px;
+    text-align: center;
+    background: #f2f2f2;
+    font-weight: 700;
+}
+.city-details li a{
+    padding: 0 5px;
+    margin-top: 5px;
+    display: inline-table;
+    /*zoom定义缩放比例*/
+    zoom: 1;
+    color: #333;
+    border-radius: 3px;
+    transition: all .05s ease;
+}
+.city-list .city-title a:hover,.city-details li a.current,.city-details li a:hover{
+    background-color: #ef4238;
+    color: #fff;
+}
+
+
+.nav{
+    float: left;
+    margin-left: 40px;
+}
+.nav ul.index li{
+    float: left;
+}
+.nav ul.index li a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.nav ul.index li.active a{
+    color: #fff;
+    background-color: #ef4238;
+}
+.nav ul.index li:not(.active):hover a{
+    color:#ef4238;
+}
+.login{
+    float: right;
+    position: relative;
+    height: 100%;
+}
+.login .user-avator{
+    border: 1px solid transparent;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0 8px;
+    width: 56px;
+    height: 100%;
+}
+.login .user-avator img{
+    width: 40px;
+    height: 40px;
+    margin-top:20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user-avator .caret{
+    position: absolute;
+    top:39px;
+    right: 8px;
+}
+.user-avator .user-menu{
+    position: absolute;
+    right: 0;
+    top: 80px;
+    border: 1px solid #d8d8d8;
+    min-width: 76px;
+    max-width: 114px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: right;
+    z-index: -1;
+    display: none;
+}
+.user-avator .user-menu a{
+    color: #999;
+    display: block;
+    padding: 0 10px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user-avator .user-menu a:hover,.user-avator .user-menu .login-name{
+    color: #ef4238;
+}
+.login-name{
+    display: block;
+    padding: 0 10px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user-avator .user-menu a:hover{
+    text-decoration: underline;
+}
+.kw-search{
+    float: right;
+    margin: 20px 10px 0 0;
+    position: relative;
+}
+.kw-search input{
+    display: inline-block;
+    height: 40px;
+    line-height: 1.2;
+    width: 200px;
+    padding: 0 40px 0 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #faf8fa;
+    overflow: hidden;
+    color: #333;
+    outline: none;
+}
+.kw-search .kw-search-btn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ef4238;
+    position: absolute;
+    left: 222px;
+    top:0;
+}
+.download{
+    float: right;
+    width: 132px;
+    height: 80px;
+    margin-right: 10px;
+    position: relative;
+}
+.download a{
+    display: block;
+    padding-top: 28px;
+    padding-left: 14px;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.download a:hover{
+
+}
+.phone-icon{
+    float: left;
+    display: inline-block;
+    width: 15px;
+    height: 24px;
+    background-image:url(../img/header/phone.png);
+    background-size: cover;
+}
+.app{
+    float: left;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 7px
+}
+.download-icon{
+    width: 130px;
+    height: 165px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #fff;
+    background-image: url(../img/header/erwei.png);
+    background-position: 24px 14px;
+    background-size: 82px 82px;
+    background-repeat: no-repeat;
+    border: 1px solid #dcd4d7;
+    border-top: 0;
+    display: none;
+}
+.download-icon p{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+.download-icon .down-title{
+    margin-top: 115px;
+    margin-bottom: 3px;
+    color: #000;
+}
+.searchList{
+    border: 1px solid #ccc;
+    width: 230px;
+    margin-left: 15px;
+    margin-top: 1px;
+    font-size: 14px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    display: none;
+}
+.searchList li{
+    border-bottom: 1px solid #e5e5e5;
+}
+.searchList li:hover,.focus{
+    background-color: #e5e5e5;
+}
+.searchList li a{
+    display: block;
+    width: 100%;
+}
+.searchList li img{
+    width: 36px;
+    height: 50px;
+    margin: 9px 10px;
+    vertical-align: top;
+}
+.searchList li span{
+    width: 168px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    height: 68px;
+    line-height: 68px;
+}
+.black .searchList li span{
+    width: 470px;
+}
+
+
+
+/*footer*/
+
+.footer-main{
+    background-color: #262426;
+    width: 100%;
+    padding: 56px 0;
+    margin: 0 auto;
+    margin-top: 82px;
+    min-width: 1200px;
+}
+.footer-main p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-main p,.footer-main p a{
+    color: #666;
+}
+/*.footer-main .friendly-link a{*/
+    /*color: #ef4238;*/
+/*}*/
+/*.footer-main a:hover{*/
+    /*text-decoration: underline;*/
+/*}*/
+/*.friendly-link span{*/
+    /*display: inline-block;*/
+    /*border-left: 1px solid #444;*/
+    /*margin: 0 7px;*/
+    /*height: 12px;*/
+    /*position: relative;*/
+    /*top: 1px;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

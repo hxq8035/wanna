@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选座--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+<div class="header">
+    <img src="img/loading.gif" class="loading-img">
+</div>
+<div class="header-box"></div>
+<div class="container">
+    <div class="order-bar">
+        <div class="step done">
+            <span class="step-num">1</span>
+            <div class="bar"></div>
+            <div class="step-text">选择影片场次</div>
+        </div>
+        <div class="step done">
+            <span class="step-num">2</span>
+            <div class="bar"></div>
+            <div class="step-text">选择座位</div>
+        </div>
+        <div class="step done">
+            <span class="step-num">3</span>
+            <div class="bar"></div>
+            <div class="step-text">确认订单</div>
+        </div>
+        <div class="step done">
+            <span class="step-num">4</span>
+            <div class="bar"></div>
+            <div class="step-text">支付</div>
+        </div>
+    </div>
+    <div class="count-down-wrapper">
+        <div class="count-down">
+            <p class="time-left">
+                请在
+                <span class="minute">14</span>
+                分钟
+                <span class="second">59</span>秒内完成支付
+            </p>
+            <p class="tip">超时订单会自动取消!</p>
+        </div>
+    </div>
+    <div id="stpe4" class="payment-container">
+        <div class="payment">
+            <div class="how-pay">请选择支付方式：</div>
+            <div class="payment-list">
+                <ul class="clear" data-act="payList">
+                    <li>
+                        <input type="radio" id="radio1" name="payinput">
+                        <label class="payment-icon" for="radio1"><img src="img/buy/pc_wxqrpay.png" alt="微信"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio2" name="payinput">
+                        <label class="payment-icon" for="radio2"><img src="img/buy/tenpay2.png" alt="财付通"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio3" name="payinput">
+                        <label class="payment-icon" for="radio3"><img src="img/buy/alipaypcnew.png" alt="支付宝"></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment-submit-area clear">
+                <div class="amount">支付 ¥ <span class="amount-price"></span></div>
+                <div class="payment-submit"><a class="btn" data-act="pay">去付款</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <img src="img/loading.gif" class="loading-img">
+</div>
+
+<div class="success"></div>
+<div class="succ-box">
+    <h3>支付成功！</h3>
+    <p>点击“确定”按钮跳转到首页</p>
+    <p><a href="javascript:;" data-act="goIndex">确定</a></p>
+</div>
+
+<div class="modal-container" data-act="rePay">
+    <div class="modal">
+        <span class="icon"></span>
+        <p class="tip">支付超时，请重新购买</p>
+        <div class="ok-btn" data-act="know">我知道了</div>
+    </div>
+</div>
+
+<div class="modal-container" data-act="choosePay">
+    <div class="modal">
+        <span class="icon"></span>
+        <p class="tip">请选择支付方式</p>
+        <div class="ok-btn" data-act="rem">我知道了</div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/base.js"></script>
+<script src="js/common.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/pay.js"></script>
+</body>
+</html>

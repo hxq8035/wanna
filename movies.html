@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正在热映--呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movies.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+    <div class="header-box"></div>
+    <div class="subnav">
+        <ul class="navbar clear">
+            <li class="active"><a href="movies.html?subnav=seq_top_show">正在热映</a></li>
+            <li><a href="movies.html?subnav=seq_soon_show">即将上映</a></li>
+            <li><a href="movies.html?subnav=seq_classic">经典影片</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="main">
+            <div class="type-content">
+                <ul data-load="typeList">
+                    <li class="type-items">
+                        <div class="type-name">类型：</div>
+                        <ul class="type-detail-list" data-value="type1">
+                        </ul>
+                    </li>
+                    <li class="type-items">
+                        <div class="type-name">区域：</div>
+                        <ul class="type-detail-list" data-value="type2">
+                        </ul>
+                    </li>
+                    <li class="type-items">
+                        <div class="type-name">年代：</div>
+                        <ul class="type-detail-list"  data-value="type3">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="movies-box">
+                <div class="type-btn">
+                    <ul data-value="orderList">
+                        <li>
+                            <span class="active checkbox-group" data-order="expected_num">
+                                <span class="checkbox"></span>
+                                <span>按热门排序</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="checkbox-group" data-order="release_time">
+                                <span class="checkbox"></span>
+                                <span>按时间排序</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="checkbox-group" data-order="score">
+                                <span class="checkbox"></span>
+                                <span>按评价排序</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="movie-list-content">
+
+                    <ul class="movie-list" data-load="movieList">
+                        <!--<dd class="no-movies">抱歉，没有找到相关结果，请尝试用其他条件筛选。</dd>-->
+                        <!--<dd>-->
+                            <!--<div class="movie-item">-->
+                                <!--<div class="movie-poster">-->
+                                    <!--<a href="#" target="_blank">-->
+                                        <!--<img src="img/movie/md/kbj.jpg">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash;  is_onsale>0 时添加  &ndash;&gt;-->
+                                <!--<div class="tips-box pre-buy">购票</div>-->
+                                <!--<div class="movie-icon">-->
+                                    <!--<i class="max2d"></i>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-detail ellipsis" title="城市之光">-->
+                                <!--<a href="#" target="_blank">城市之光</a>-->
+                            <!--</div>-->
+                            <!--<div class="movie-detail ellipsis text-yellow">暂无评分</div>-->
+                        <!--</dd>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="pages">
+                <ul class="page-list" data-load="pageList">
+                    <!--<li  class="disabled"><a href="#">上一页</a></li>-->
+                    <!--<li class="active"><a href="#">1</a></li>-->
+                    <!--<li class="seq">...</li>-->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+
+    <div class="top">
+        <a href="javascript:;" class="top-btn"></a>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/movies.js"></script>
+</body>
+</html>

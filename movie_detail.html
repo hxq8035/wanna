@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/movie_detail.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+    <div class="header-box"></div>
+    <div class="ban-container">
+        <div class="banner ban2" id="ban2">
+            <div class="banner-main">
+                <div class="banner-more">
+                    <div class="more-content">
+                        <a href="javascript:;" class="scroll-btn" data-move="left"></a>
+                        <a href="javascript:;" class="scroll-btn scroll-btn-right" data-move="right"></a>
+                        <div class="movie-more">
+                            <ul  data-load="bannerImgs">
+                                <li class="loading"><img src="img/loading-pic.gif"></li>
+                                <!--<li>-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="img/movie/md/wpbb.jpg">-->
+                                        <!--<div class="movie-text">-->
+                                            <!--<div class="movie-icon">-->
+                                                <!--&lt;!&ndash;有icon加i&ndash;&gt;-->
+                                                <!--<i class="max2d"></i>-->
+                                            <!--</div>-->
+                                            <!--<div class="text-bottom">-->
+                                                <!--<div class="movie-score">-->
+                                                    <!--<i class="score-int">8.</i>-->
+                                                    <!--<i class="score-fraction">9</i>-->
+                                                <!--</div>-->
+                                                <!--&lt;!&ndash;有评分加text-name-padding&ndash;&gt;-->
+                                                <!--<div class="text-name ellipsis text-name-padding" title="王牌保镖">王牌保镖</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="close">
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="ban1">
+            <div class="banner-main">
+                <div class="banner-detail clearFix">
+                    <div class="bann-left">
+                        <div class="left-shadow" id="leftShadow">
+                            <!--<img class="avator" src="img/movie/lg/yldj.jpg" >-->
+                            <!--<div class="movie-icon">-->
+                                <!--&lt;!&ndash;有icon加i&ndash;&gt;-->
+                                <!--<i class="max3d"></i>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="bann-right clear">
+                        <div class="right-title" id="topTitle">
+                            <!--<h3 class="name ellipsis">英伦对决</h3>-->
+                            <!--<div class="ename ellipsis">The Foreigner</div>-->
+                            <!--<ul>-->
+                                <!--<li class="ellipsis">剧情，动作，犯罪</li>-->
+                                <!--<li class="ellipsis">英国,中国大陆/ 116分钟</li>-->
+                                <!--<li class="ellipsis">2017-09-30大陆上映</li>-->
+                            <!--</ul>-->
+                        </div>
+                        <div class="action-btn" id="buttons">
+                            <div class="my-btn clear">
+                                <a class="wish" id="viewBtn">
+                                    <div>
+                                        <i class="icon wish-icon"></i>
+                                        <span id="hasView">想看</span>
+                                    </div>
+                                </a>
+                                <a class="score" id="scoreBtn">
+                                    <div>
+                                        <i class="icon score-icon"></i>
+                                        <span id="hasScore">评分</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--<a href="#" target="_blank" class="buy-btn">-->
+                                <!--立即购票-->
+                            <!--</a>-->
+                        </div>
+                        <div class="movie-total">
+                            <div class="movie-index" id="score">
+                                <!--<p class="movie-index-title">用户评分</p>-->
+                                <!--<div class="movie-index-content">-->
+                                    <!--<span class="index-left">8.4</span>-->
+                                    <!--<div class="index-right">-->
+                                        <!--<div class="star-wrapper">-->
+                                            <!--<div class="star-on" style="width:84%;"></div>-->
+                                        <!--</div>-->
+                                        <!--<span class="score-num">-->
+                                        <!--<span>59042</span>-->
+                                        <!--人评分-->
+                                    <!--</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                            <!--<div class="movie-index">-->
+                                <!--<p class="movie-index-title">专业评分</p>-->
+                                <!--<div class="movie-index-content">-->
+                                    <!--<span class="no-info">暂无</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <div class="movie-index">
+                                <p class="movie-index-title">累计票房</p>
+                                <div class="movie-index-content" id="office">
+                                    <!--<span class="plnum">2.80</span>-->
+                                    <!--<span class="unit">亿</span>-->
+                                    <!--<span class="no-info">暂无</span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="change">
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-body clear">
+            <div class="main-content">
+                <div class="main-content-title clear" data-act="show">
+                    <div class="main-title active" data-value="0">介绍</div>
+                    <div class="main-title" data-value="1">演职人员</div>
+                    <div class="main-title title-disable" data-value="2">奖项</div>
+                    <div class="main-title" data-value="3">图集</div>
+                </div>
+                <div class="main-content-body" data-show="container">
+                    <!--介绍-->
+                    <div  class="desc-box">
+                        <div class="desc-detail">
+                            <div class="desc-detail-title">
+                                <h3>剧情简介</h3>
+                            </div>
+                            <div class="desc-detail-content">
+                                <p class="detail-p" data-load="des">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="desc-detail">
+                            <div class="desc-detail-title">
+                                <h3>演职人员</h3>
+                                <a class="more" data-act="allPer">全部</a>
+                            </div>
+                            <div class="desc-detail-content">
+                                <div class="star-wraper clear">
+                                    <div class="star-group">
+                                        <div class="star-type">导演</div>
+                                        <ul class="star-list clear" data-load="director">
+                                            <!--<li>-->
+                                                <!--<a href="#" target="_blank" class="star-link">-->
+                                                    <!--<img src="img/movie_detail/333mar32.jpg">-->
+                                                <!--</a>-->
+                                                <!--<div class="info">-->
+                                                    <!--<a href="#" class="star-name ellipsis" target="_blank">马丁·坎贝尔</a>-->
+                                                <!--</div>-->
+                                            <!--</li>-->
+                                        </ul>
+                                    </div>
+                                    <div class="star-group">
+                                        <div class="star-type">演员</div>
+                                        <ul class="star-list clear" data-load="actors">
+                                            <!---->
+                                            <!--<li>-->
+                                                <!--<a href="#" target="_blank" class="star-link">-->
+                                                    <!--<img src="img/movie_detail/333clsd.jpg">-->
+                                                <!--</a>-->
+                                                <!--<div class="info">-->
+                                                    <!--<a href="#" class="star-name ellipsis" target="_blank">成龙</a>-->
+                                                    <!--<br>-->
+                                                    <!--<span class="role">饰：关玉明</span>-->
+                                                <!--</div>-->
+                                            <!--</li>-->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-detail">
+                            <div class="desc-detail-title">
+                                <h3>图集</h3>
+                                <a data-act="allPic" class="more">全部</a>
+                            </div>
+                            <div class="desc-detail-content">
+                                <div class="image-album clear">
+                                    <div class="img-wrapper img-wrapper-lg">
+                                        <img src="img/movie_detail/1.jpg" data-value="0">
+                                    </div>
+                                    <div class="img-wrapper img2">
+                                        <img src="img/movie_detail/2.jpg" data-value="1">
+                                    </div>
+                                    <div class="img-wrapper img3">
+                                        <img src="img/movie_detail/3.jpg" data-value="2">
+                                    </div>
+                                    <div class="img-wrapper img4">
+                                        <img src="img/movie_detail/4.jpg" data-value="3">
+                                    </div>
+                                    <div class="img-wrapper img5">
+                                        <img src="img/movie_detail/5.jpg" data-value="4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-detail">
+                            <div class="desc-detail-title">
+                                <h3>热门短评</h3>
+                            </div>
+                            <div class="desc-detail-content">
+                                <div class="comment-list-container" data-load="comments">
+                                    <!--<ul>-->
+                                        <!--<li class="comment-item last">-->
+                                            <!--<div class="avatar-container">-->
+                                                <!--<div class="avatar">-->
+                                                    <!--<img src="img/movie_detail/99acc.jpg">-->
+                                                <!--</div>-->
+                                                <!--<i class="level-1-icon level-3"></i>-->
+                                            <!--</div>-->
+                                            <!--<div class="comment-main">-->
+                                                <!--<div class="main-header">-->
+                                                    <!--<div class="user">-->
+                                                        <!--<span>泽熙丶Kim</span>-->
+                                                        <!--<span class="tag">购</span>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="time">-->
+                                                        <!--<span title="2017-09-30 02:14:30">09-30</span>-->
+                                                        <!--<ul class="score-star clear">-->
+                                                            <!--<li>-->
+                                                                <!--<i class="half-star left active"></i>-->
+                                                                <!--<i class="half-star right active"></i>-->
+                                                            <!--</li>-->
+                                                            <!--<li>-->
+                                                                <!--<i class="half-star left active"></i>-->
+                                                                <!--<i class="half-star right active"></i>-->
+                                                            <!--</li>-->
+                                                            <!--<li>-->
+                                                                <!--<i class="half-star left active"></i>-->
+                                                                <!--<i class="half-star right active"></i>-->
+                                                            <!--</li>-->
+                                                            <!--<li>-->
+                                                                <!--<i class="half-star left active"></i>-->
+                                                                <!--<i class="half-star right active"></i>-->
+                                                            <!--</li>-->
+                                                            <!--<li>-->
+                                                                <!--<i class="half-star left active"></i>-->
+                                                                <!--<i class="half-star right"></i>-->
+                                                            <!--</li>-->
+                                                        <!--</ul>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="good">-->
+                                                        <!--<i class="good-icon"></i>-->
+                                                        <!--<span class="num">2022</span>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="comment-content">满满的心酸 父爱 一个国家利益和黑暗 为了政治伤害了无辜公民妇女 迫不得已成龙大哥只能用自己的手段 来惩罚杀害自己女儿的凶手 成龙大哥还是一样真功夫 真的很精彩 但越看越心酸 每当随意一个画面看到成龙大哥走路姿势 和背影时 我哭了 谢谢您</div>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                    <div class="no-comments">
+                                        <img src="img/news/no-comments.png">
+                                        <div class="no-coments-tips">暂无评论</div>
+                                    </div>
+                                </div>
+                                <a  class="comment-btn" data-act="write">写短评</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--演职人员-->
+                    <div style="display: none" class="actor-box">
+                        <div class="star-wraper" data-load="allPers">
+                            <div class="star-group">
+                                <div class="star-type">
+                                    导演
+                                    <span class="actor-num" data-value="dirNum"></span>
+                                </div>
+                                <ul class="star-list clear" data-load="dirAll">
+                                </ul>
+                            </div>
+                            <div class="star-group">
+                                <div class="star-type">
+                                    演员
+                                    <span class="actor-num" data-value="actNum"></span>
+                                </div>
+                                <ul class="star-list clear" data-load="actAll">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--奖项-->
+                    <div style="display: none" class="award-box">
+                        <ul>
+                            <li class="award-item">
+                                <div>
+                                    <div class="left-img">
+                                        <img src="img/movie_detail/32aw.jpg" alt="">
+                                    </div>
+                                    第五十二届台湾金马奖
+                                </div>
+                                <div class="content">
+                                    <div>提名：最佳男主角</div>
+                                </div>
+                            </li>
+                            <li class="award-item">
+                                <div>
+                                    <div class="left-img">
+                                        <img src="img/movie_detail/32aw.jpg" alt="">
+                                    </div>
+                                    第五十二届台湾金马奖
+                                </div>
+                                <div class="content">
+                                    <div>提名：最佳男主角</div>
+                                    <div>获奖：金爵奖-最佳导演 / 金爵奖-最佳男演员 / 金爵奖-最佳男演员 / 金爵奖-最佳男演员</div>
+                                </div>
+                            </li>
+                            <li class="award-item">
+                                <div>
+                                    <div class="left-img">
+                                        <img src="img/movie_detail/32aw.jpg" alt="">
+                                    </div>
+                                    第五十二届台湾金马奖
+                                </div>
+                                <div class="content">
+                                    <div>提名：最佳男主角</div>
+                                    <div>获奖：金爵奖-最佳导演 / 金爵奖-最佳男演员 / 金爵奖-最佳男演员 / 金爵奖-最佳男演员</div>
+                                </div>
+                            </li>
+                            <li class="award-item">
+                                <div>
+                                    <div class="left-img">
+                                        <img src="img/movie_detail/32aw.jpg" alt="">
+                                    </div>
+                                    第五十二届台湾金马奖
+                                </div>
+                                <div class="content">
+                                    <div>提名：最佳男主角</div>
+                                    <div>获奖：金爵奖-最佳导演 / 金爵奖-最佳男演员 / 金爵奖-最佳男演员 / 金爵奖-最佳男演员</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--图集-->
+                    <div style="display: none" class="img-box clear">
+                        <ul data-load="picAll">
+                            <!--<li data-index="0">-->
+                                <!--<img class="default-img" src="img/movie/sm/xxdtq/0.jpg" >-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--相关-->
+            <div class="related" data-load="related">
+                <!--<div class="desc-detail">-->
+                    <!--<div class="desc-detail-title">-->
+                        <!--<h3>相关咨讯</h3>-->
+                    <!--</div>-->
+                    <!--<div class="desc-detail-content">-->
+                        <!--<ul>-->
+                            <!--<li class="news-item">-->
+                                <!--<div class="news-img">-->
+                                    <!--<a href="#" target="_blank">-->
+                                        <!--<img src="img/loading.png" class="poster-default">-->
+                                        <!--<img src="img/movie_detail/4dscs.jpg" class="img-detail">-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="news-detail">-->
+                                    <!--<div class="news-detail-title">-->
+                                        <!--<a href="#" target="_blank">一分钟带你看懂成龙新片《英伦对决》</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="news-info">-->
+                                        <!--<span class="news-source">猫眼电影</span>-->
+                                        <!--<span>-->
+                                            <!--<i class="news-icon news-icon-view"></i>-->
+                                            <!--5420-->
+                                        <!--</span>-->
+                                        <!--<span>-->
+                                            <!--<i class="news-icon news-icon-comments"></i>-->
+                                            <!--23-->
+                                        <!--</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="desc-detail">-->
+                    <!--<div class="desc-detail-title">-->
+                        <!--<h3>相关电影</h3>-->
+                    <!--</div>-->
+                    <!--<div class="desc-detail-content">-->
+                        <!--<ul class="related-movie clear">-->
+                            <!--<li class="movie-item">-->
+                                <!--<div class="movie-poster">-->
+                                    <!--<a href="#" target="_blank">-->
+                                        <!--<img src="img/movie/sm/sdv.jpg">-->
+                                    <!--</a>-->
+                                    <!--<div class="movie-icon">-->
+                                        <!--<i class="max2d"></i>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="movie-name ellipsis">-->
+                                    <!--<a href="#" target="_blank">有完没完</a>-->
+                                <!--</div>-->
+                                <!--<div class="score">-->
+                                    <!--暂无评分-->
+                                    <!--&lt;!&ndash;<i class="score-int">8.</i>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i class="score-fraction">1</i>&ndash;&gt;-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+
+    <div class="comment" id="commentBox">
+        <div class="comment-container">
+            <div class="score-msg-container">
+                <div class="no-score">请点击星星评分</div>
+                <!--<div class="score">-->
+                    <!--<span class="score-num">6</span>-->
+                    <!--分-->
+                <!--</div>-->
+                <!--<div class="score-msg">一般般</div>-->
+            </div>
+            <div class="star-score">
+                <ul data-act="starList">
+                    <li>
+                        <i class="half-star left "></i>
+                        <i class="half-star right "></i>
+                    </li>
+                    <li>
+                        <i class="half-star left "></i>
+                        <i class="half-star right "></i>
+                    </li>
+                    <li>
+                        <i class="half-star left "></i>
+                        <i class="half-star right "></i>
+                    </li>
+                    <li>
+                        <i class="half-star left "></i>
+                        <i class="half-star right "></i>
+                    </li>
+                    <li>
+                        <i class="half-star left"></i>
+                        <i class="half-star right"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="input_Box ">
+                <textarea class="input_text" placeholder="快来说说你的看法吧"></textarea>
+                <div class="faceDiv"> </div>
+                <div class="input_Foot">
+                    <a class="imgBtn" href="javascript:;"></a>
+                    <a class="postBtn disabled">确定</a>
+                </div>
+            </div>
+            <div class="close-comment">×</div>
+        </div>
+    </div>
+    <div class="comment-overlay"></div>
+
+    <div class="img-lg-overlay"></div>
+    <div class="img-lg">
+        <div class="img-lg-top ">
+            <span class="img-lg-close" data-act="lgClose"></span>
+            <div class="img-lg-count">
+                <span id="current">1</span>
+                /
+                <span>35</span>
+            </div>
+        </div>
+        <div class="img-lg-content">
+            <ul data-load="lgList">
+                <!--<li>-->
+                    <!--<img src="img/movie/xlg/xxdtq/0.jpg" >-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <div>
+            <div class="lg-btn lg-btn-left" data-move="lg-left"></div>
+            <div class="lg-btn lg-btn-right" data-move="lg-right"></div>
+        </div>
+        <div class="list-bottom">
+            <ul data-load="lgBottomList">
+                <!--<li>-->
+                    <!--<img src="img/movie/sm/xxdtq/0.jpg" >-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="top">
+        <a href="javascript:;" class="top-btn"></a>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/movie_detail.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+.main{
+    width: 100%;
+    background: url(../img/board/mainBg2.jpg) center -47px no-repeat #f2fbff;
+    padding-top: 320px;
+    padding-bottom: 20px;
+}
+.board-content{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 0 rgba(52,145,188,.14);
+    min-height: 200px;
+}
+.board-link{
+    width: 325px;
+    height: 250px;
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 103px;
+    margin-left: -162px;
+}
+.board-content .title{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.board-content p{
+    font-size: 16px;
+    line-height: 40px;
+}
+b{
+    margin-top: 40px;
+    display: block;
+}

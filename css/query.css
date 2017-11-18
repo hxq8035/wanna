@@ -1,0 +1,132 @@
+.search-box{
+    width: 950px;
+    margin: 0 auto;
+}
+.search-input{
+    width: 100%;
+    background: #47464a;
+    padding-bottom: 18px;
+}
+.black{
+    position: relative;
+    width: 630px;
+    margin: 0 auto;
+    padding-top: 38px;
+    padding-bottom: 8px;
+}
+.lg-search{
+    box-sizing: border-box;
+    line-height: 18px;
+    width: 630px;
+    padding: 15px 50px 15px 20px;
+    border: 1px solid #999;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+}
+.tips{
+    text-align: center;
+    color: #ef4238;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.submit{
+    position: absolute;
+    box-sizing: border-box;
+    border: none;
+    left: auto;
+    top: 51px;
+    right: 12px;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    outline: none;
+    background: url("../img/header/red-search.png");
+}
+.result-list{
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+}
+.result-list li{
+    width: 460px;
+    float: left;
+    line-height: 1.2;
+    margin: 40px 0 0 30px;
+    display: inline-block;
+    /*vertical-align: top;*/
+}
+.movie-img{
+    display: inline-block;
+    border: 1px solid #efefef;
+    width: 160px;
+    height: 220px;
+    vertical-align: top;
+    margin: -1px;
+    margin-right: 20px;
+    position: relative;
+}
+.movie-info{
+    border-bottom: 1px solid #e5e5e5;
+    width: 270px;
+    height: 220px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.movie-name{
+    text-align: left;
+    font-size: 26px;
+    width: auto;
+    margin-top: 27px;
+    padding-bottom: 1px;
+}
+.ename,.timer{
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+    padding-bottom: 1px;
+}
+.movie-type{
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+
+    padding-bottom: 1px;
+}
+.timer{
+    font-size: 16px;
+}
+.score{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    color: #ffb400;
+    height: 31px;
+    line-height: 31px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+}
+.empty{
+    margin:0 35px;
+}
+.empty h3{
+    margin-top: 98px;
+    font-size: 26px;
+    color: #999;
+    font-weight: 400;
+}
+.empty dl{
+    margin-top: 27px;
+    margin-bottom: 16px;
+}
+.empty dt{
+    color: #ef4238;
+}
+.empty dd{
+    margin-top: 10px;
+}

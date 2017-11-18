@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>呀呵电影</title>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+    <div class="header-box"></div>
+    <div class="banner clear">
+        <div class="banner-img" data-load="bannerImgs">
+        </div>
+        <!--左右方向按钮-->
+        <a href="#" class="ck-slide ck-left" data-move="left"></a>
+        <a href="#" class="ck-slide ck-right" data-move="right"></a>
+        <!--导航小圆点-->
+        <ul class="indicators" data-load="bannerInds">
+             <!--<li class="hover" data-item="0"></li>-->
+             <!--<li data-item="1"></li>-->
+             <!--<li data-item="2"></li>-->
+        </ul>
+    </div>
+    <div class="container clear">
+        <div class="right">
+            <div class="today-incomes">
+                <div class="panel">
+                    <div class="panel-title">
+                        <span class="text-red">今日票房</span>
+                    </div>
+                    <div class="panel-content">
+                        <ul class="ranking-list">
+                            <!--<img src="img/loading-pic.gif" >-->
+                            <!--<li class=" ranking-item ranking-top">-->
+                                <!--<a href="#" target="_blank">-->
+                                    <!--<div class="ranking-top-img">-->
+                                        <!--<i></i>-->
+                                        <!--<img src="img/movie/sm/xqjq.png">-->
+                                    <!--</div>-->
+                                    <!--<div class="ranking-top-details">-->
+                                        <!--<div class="ranking-top-details-main">-->
+                                            <!--<span class="ranking-top-name ellipsis">星球崛起3：终极之战我们</span>-->
+                                            <!--<p class="ranking-top-wish text-red">-->
+                                                <!--<span>2977.70</span>-->
+                                                <!--万-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li class=" ranking-item">-->
+                                <!--<a href="#" target="_blank">-->
+                                    <!--<span class="normal-rank">-->
+                                        <!--<i class="ranking-index text-red">2</i>-->
+                                        <!--<span class="normal-rank-name ellipsis">王牌宝宝</span>-->
+                                        <!--<span class="normal-rank-num">-->
+                                            <!--<span>1908.78</span>-->
+                                            <!--万-->
+                                        <!--</span>-->
+                                    <!--</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="today-total-incomes clear">
+                <h3>今日大盘</h3>
+                <div class="total-income-body">
+                    <p>
+                        <span class="total-num">8890.3</span>
+                        万
+                        <a href="lookforward.html" class="more" target="_blank">
+                            查看更多
+                            <span class="panel-more-arrow more-red"></span>
+                        </a>
+                    </p>
+                    <div class="total-income-time">
+                        <span id="time"></span>
+                        <span>呀呵专业版实时票房数据</span>
+                    </div>
+                </div>
+            </div>
+            <div class="most-expect">
+                <div class="panel">
+                    <div class="panel-title">
+                        <span class="text-yellow">最受期待</span>
+                        <a href="boards.html?rule=expected" class="panel-more">
+                            查看完整榜单
+                            <span class="panel-more-arrow more-yellow"></span>
+                        </a>
+                    </div>
+                    <div class="panel-content">
+                        <ul class="ranking-list ecpect-ranking">
+                            <!--<li class=" ranking-item ranking-top">-->
+                                <!--<a href="#">-->
+                                    <!--<div class="ranking-top-img">-->
+                                        <!--<i></i>-->
+                                        <!--<img src="img/movie/sm/3.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div class="ranking-top-details">-->
+                                        <!--<div class="ranking-top-details-main">-->
+                                            <!--<span class="ranking-top-name ellipsis">羞羞的铁拳</span>-->
+                                            <!--<p class="release-time">上映时间：2017-09-30</p>-->
+                                            <!--<p class="ranking-top-wish text-yellow">-->
+                                                <!--<span>249640</span>-->
+                                                <!--人想看-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li class=" ranking-item ranking-index-2">-->
+                                <!--<a href="#">-->
+                                        <!--<i class="ranking-index">2</i>-->
+                                        <!--<span>-->
+                                            <!--<img src="img/movie/sm/1.jpg" alt="">-->
+                                        <!--</span>-->
+                                        <!--<span class="top-name normal-rank-name  ellipsis">王牌特工2：的层次的</span>-->
+                                        <!--<span class="normal-rank-num">-->
+                                            <!--<span>152913</span>-->
+                                            <!--人想看-->
+                                        <!--</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li class=" ranking-item ranking-index-4">-->
+                                <!--<a href="#">-->
+                                    <!--<span class="normal-rank">-->
+                                        <!--<i class="ranking-index">4</i>-->
+                                        <!--<span class="normal-rank-name ellipsis">王牌宝宝</span>-->
+                                        <!--<span class="normal-rank-num">-->
+                                            <!--<span>53491</span>-->
+                                            <!--人想看-->
+                                        <!--</span>-->
+                                    <!--</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li class=" ranking-item">-->
+                                <!--<a href="#">-->
+                                    <!--<span class="normal-rank">-->
+                                        <!--<i class="ranking-index">4</i>-->
+                                        <!--<span class="normal-rank-name ellipsis">王牌宝宝</span>-->
+                                        <!--<span class="normal-rank-num">-->
+                                            <!--<span>61829</span>-->
+                                            <!--人想看-->
+                                        <!--</span>-->
+                                    <!--</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top-100">
+                <div class="panel">
+                    <div class="panel-title">
+                        <span class="text-yellow">TOP 100</span>
+                        <a href="boards.html?rule=TOP100" class="panel-more">
+                            查看完整榜单
+                            <span class="panel-more-arrow more-yellow"></span>
+                        </a>
+                    </div>
+                    <div class="panel-content">
+                        <ul class="ranking-list top-100-list">
+                            <!--<li class=" ranking-item ranking-top">-->
+                                <!--<a href="#">-->
+                                    <!--<div class="ranking-top-img">-->
+                                        <!--<i></i>-->
+                                        <!--<img src="img/movie/sm/22.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div class="ranking-top-details">-->
+                                        <!--<div class="ranking-top-details-main">-->
+                                            <!--<span class="ranking-top-name ellipsis">霸王别姬</span>-->
+                                            <!--<p class="ranking-top-wish text-yellow">-->
+                                                <!--<span >9.6</span>-->
+                                                <!--分-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                            <!--<li class=" ranking-item">-->
+                                <!--<a href="#">-->
+                                    <!--<span class="normal-rank">-->
+                                        <!--<i class="ranking-index text-yellow">2</i>-->
+                                        <!--<span class="normal-rank-name ellipsis">王牌宝宝</span>-->
+                                        <!--<span class="normal-rank-num">-->
+                                            <!--<span>9.4</span>-->
+                                            <!--分-->
+                                        <!--</span>-->
+                                    <!--</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="panel" id="floor1">
+                <div class="panel-title">
+                    <span class="text-red">正在热映 <span id="num1"></span></span>
+                    <a href="movies.html?subnav=seq_top_show" class="panel-more text-red">
+                        全部
+                        <span class="panel-more-arrow more-red"></span>
+                    </a>
+                </div>
+                <div class="panel-content">
+                    <ul class="movie-list clear" id="list1">
+                        <!--<li>-->
+                            <!--<div class="movie-item">-->
+                                <!--<div class="movie-poster">-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="img/index/wpbb.jpg">-->
+                                        <!--<div class="movie-text">-->
+                                            <!--<div class="movie-icon">-->
+                                                <!--&lt;!&ndash;有icon加i&ndash;&gt;-->
+                                                <!--<i class="max3d"></i>-->
+                                            <!--</div>-->
+                                            <!--<div class="text-bottom">-->
+                                                <!--<div class="movie-score">-->
+                                                    <!--<i class="score-int">8.</i>-->
+                                                    <!--<i class="score-fraction">9</i>-->
+                                                <!--</div>-->
+                                                <!--&lt;!&ndash;有评分加text-name-padding&ndash;&gt;-->
+                                                <!--<div class="text-name text-name-padding ellipse" title="王牌保镖">王牌保镖</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="buy-btn">-->
+                                    <!--<a href="#" target="_blank">购票</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="panel" id="floor2">
+                <div class="panel-title">
+                    <span class="text-blue">即将上映 <span id="num2"></span></span>
+                    <a href="movies.html?subnav=seq_soon_show" class="panel-more text-blue">
+                        全部
+                        <span class="panel-more-arrow more-blue"></span>
+                    </a>
+                </div>
+                <div class="panel-content">
+                    <ul class="movie-list clear" id="list2">
+
+                        <!--<li>-->
+                            <!--<div class="movie-item">-->
+                                <!--<div class="movie-poster">-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="img/movie/md/wpbb.jpg">-->
+                                        <!--<div class="movie-text">-->
+                                            <!--<div class="movie-icon">-->
+                                                <!--&lt;!&ndash;有icon加i&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="max2d"></i>&ndash;&gt;-->
+                                            <!--</div>-->
+                                            <!--<div class="text-bottom">-->
+
+                                                <!--&lt;!&ndash;有评分加text-name-padding&ndash;&gt;-->
+                                                <!--<div class="text-name ellipsis" title="王牌保镖">王牌保镖</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="movie-detail ellipsis movie-wish ">-->
+                                    <!--<span>33456</span>-->
+                                    <!--人想看-->
+                                <!--</div>-->
+                                <!--<div class="movie-detail ellipsis movie-grid">-->
+                                    <!--<a class="preView">预告片</a>-->
+                                    <!--<a href="#" class="preSale active">预售</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="movie-detail ellipsis show-time">9月29日上映</div>-->
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="panel" id="floor3">
+                <div class="panel-title">
+                    <span class="text-red">热播电影</span>
+                    <span class="sub-title">
+                        <a href="movies.html?subnav=seq_classic&type=0">爱情</a>
+                    </span>
+                    <span class="sub-title">
+                        <a href="movies.html?subnav=seq_classic&type=1">喜剧</a>
+                    </span>
+                    <span class="sub-title">
+                        <a href="movies.html?subnav=seq_classic&type=2">动作</a>
+                    </span>
+                    <span class="sub-title">
+                        <a href="movies.html?subnav=seq_classic&type=3">恐怖</a>
+                    </span>
+                    <span class="sub-title">
+                        <a href="movies.html?subnav=seq_classic&type=4">动画</a>
+                    </span>
+                    <a href="movies.html?subnav=seq_classic" class="panel-more text-red">
+                        全部
+                        <span class="panel-more-arrow more-red"></span>
+                    </a>
+                </div>
+                <div class="panel-content">
+                    <ul class="movie-list clear">
+
+                        <!--<li>-->
+                            <!--<div class="movie-item">-->
+                                <!--<div class="movie-poster movie-poster-long">-->
+                                    <!--<a href="#">-->
+                                        <!--<img src="img/movie/md/hmjz_l.jpg">-->
+                                        <!--<div class="movie-text">-->
+                                            <!--<div class="movie-icon">-->
+                                                <!--&lt;!&ndash;有icon加i&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<i class="max2d"></i>&ndash;&gt;-->
+                                            <!--</div>-->
+                                            <!--<div class="text-bottom">-->
+                                                <!--<div class="movie-score">-->
+                                                    <!--<i class="score-int">8.</i>-->
+                                                    <!--<i class="score-fraction">9</i>-->
+                                                <!--</div>-->
+                                                <!--&lt;!&ndash;有评分加text-name-padding&ndash;&gt;-->
+                                                <!--<div class="text-name ellipsis text-name-padding" title="王牌保镖">王牌保镖</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/loading.gif" class="loading-img">
+    </div>
+
+    <div class="top">
+        <a href="javascript:;" class="top-btn"></a>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
