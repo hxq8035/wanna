@@ -81,7 +81,7 @@ $output["pageCount"]=$pageCount;
 
 $sql="SELECT fid,fname,score,is_onsale,icon,md FROM film f,film_pic p,index_movie m WHERE f.fname=p.film_name AND m.film_name=f.fname".$cond;
 $output["data"]=(sql_execute($sql,MYSQLI_ASSOC));
-
+$output["sal"]=$sql;
 $sql="SELECT fid FROM film";
 $result=sql_execute($sql,MYSQLI_ASSOC);
 $arr=array();
@@ -102,6 +102,7 @@ foreach($arr as $i){
 $output["actors"]=$actors;
 
 echo json_encode($output);
+
 
 
 ?>

@@ -200,7 +200,7 @@
             $(".comment-overlay").show();
             disabledMouseWheel();
         }else{
-            location="login.html?continue=movie_detail.html?nid="+nid;
+            location="login.html?continue=news.html?nid="+nid;
         }
     }
 
@@ -421,7 +421,7 @@
                 $.get("data/movie_detail/update_praise.php",{cid,praise:(currentPraise-1)});
             }
         }else{
-            location="login.html?continue=movie_detail.html?nid="+nid;
+            location="login.html?continue=news.html?nid="+nid;
         }
     });
 
